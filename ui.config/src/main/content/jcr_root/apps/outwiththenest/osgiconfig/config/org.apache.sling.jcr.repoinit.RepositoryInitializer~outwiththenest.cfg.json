@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/outwiththenest",
+        "create path (nt:unstructured) /content/dam/outwiththenest/jcr:content",
+        "set properties on /content/dam/outwiththenest/jcr:content\n  set cq:conf{String} to /conf/outwiththenest\n  set jcr:title{String} to \"Out With The Nest\"\nend"
+    ]
+}

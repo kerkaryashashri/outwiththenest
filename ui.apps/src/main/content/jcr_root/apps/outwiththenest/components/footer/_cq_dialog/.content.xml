@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Nest Footer"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+
+        <items jcr:primaryType="nt:unstructured">
+
+            <logo
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="Logo asset"
+                name="./logo"
+                rootPath="/content/dam"/>
+
+            <homeUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Home URL"
+                name="./homeUrl"
+                value="/content/outwiththenest/gb/en/home.html"
+                required="{Boolean}true"/>
+
+            <description
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                fieldLabel="Short description"
+                name="./description"
+                value="Little adventures. Lovely family memories."/>
+
+            <exploreUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Explore activities URL"
+                fieldDescription="Use an existing page URL including .html. Leave blank to hide this link."
+                name="./exploreUrl"/>
+
+            <placesUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Places to visit URL"
+                fieldDescription="Use an existing page URL including .html. Leave blank to hide this link."
+                name="./placesUrl"/>
+
+            <aboutUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="About us URL"
+                fieldDescription="Use an existing page URL including .html. Leave blank to hide this link."
+                name="./aboutUrl"/>
+
+            <copyrightText
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Copyright text"
+                fieldDescription="Update the year here when needed."
+                name="./copyrightText"
+                value="© 2026 Out With The Nest. All rights reserved."/>
+
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,66 @@
+<section data-sly-use.search="com.adobe.cq.wcm.core.components.models.Search"
+         id="${search.id}"
+         class="cmp-search cmp-nest-search"
+         role="search"
+         aria-label="${'Site search' @ i18n}"
+         data-cmp-is="search"
+         data-cmp-min-length="${search.searchTermMinimumLength}"
+         data-cmp-results-size="${search.resultsSize}">
+
+    <!-- Core JS requires this element to be a direct child. -->
+    <div class="cmp_search__info"
+         aria-live="polite"
+         aria-atomic="true"
+         role="status"
+         style="visibility: hidden;"></div>
+
+    <form class="cmp-search__form"
+          data-cmp-hook-search="form"
+          method="get"
+          action="${currentPage.path @ addSelectors=['searchresults'], extension='json', suffix=search.relativePath}"
+          autocomplete="off">
+
+        <div class="cmp-search__field">
+            <i class="cmp-search__icon"
+               data-cmp-hook-search="icon"
+               aria-hidden="true"></i>
+
+            <span class="cmp-search__loading-indicator"
+                  data-cmp-hook-search="loadingIndicator"
+                  aria-hidden="true"></span>
+
+            <input class="cmp-search__input"
+                   data-cmp-hook-search="input"
+                   type="text"
+                   name="fulltext"
+                   placeholder="${'Search' @ i18n}"
+                   aria-label="${'Search the site' @ i18n}"
+                   role="combobox"
+                   aria-autocomplete="list"
+                   aria-haspopup="listbox"
+                   aria-invalid="false"
+                   aria-expanded="false">
+
+            <button class="cmp-search__clear"
+                    data-cmp-hook-search="clear"
+                    type="button"
+                    aria-label="${'Clear search' @ i18n}"
+                    style="display: none;">
+                <i class="cmp-search__clear-icon"
+                   aria-hidden="true"></i>
+            </button>
+        </div>
+    </form>
+
+    <div class="cmp-nest-search__dropdown">
+        <div class="cmp-search__results"
+             aria-label="${'Search results' @ i18n}"
+             data-cmp-hook-search="results"
+             role="listbox"
+             aria-multiselectable="false"
+             aria-hidden="true"
+             style="display: none;"></div>
+    </div>
+
+    <sly data-sly-include="itemTemplate.html"/>
+</section>
