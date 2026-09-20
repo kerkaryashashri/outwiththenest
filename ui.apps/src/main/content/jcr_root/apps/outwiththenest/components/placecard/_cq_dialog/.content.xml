@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Place Card"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+
+            <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                name="./title"
+                fieldLabel="Title"
+                required="{Boolean}true"/>
+
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                name="./fileReference"
+                fieldLabel="Image"
+                fieldDescription="Select an image from Assets."
+                rootPath="/content/dam"
+                required="{Boolean}true"/>
+
+            <imageAlt
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                name="./imageAlt"
+                fieldLabel="Image description"
+                fieldDescription="Describe useful visual information. Leave empty if the image only decorates the card."/>
+
+            <location
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                name="./location"
+                fieldLabel="Location"
+                required="{Boolean}true"/>
+
+            <environment
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                name="./environment"
+                fieldLabel="Indoor or outdoor">
+                <items jcr:primaryType="nt:unstructured">
+                    <outdoor
+                        jcr:primaryType="nt:unstructured"
+                        text="Outdoors"
+                        value="Outdoors"
+                        selected="{Boolean}true"/>
+                    <indoor
+                        jcr:primaryType="nt:unstructured"
+                        text="Indoors"
+                        value="Indoors"/>
+                    <both
+                        jcr:primaryType="nt:unstructured"
+                        text="Indoor and outdoor"
+                        value="Indoor and outdoor"/>
+                </items>
+            </environment>
+
+            <pagePath
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                name="./pagePath"
+                fieldLabel="Detail page"
+                rootPath="/content/outwiththenest"
+                required="{Boolean}true"/>
+
+        </items>
+    </content>
+</jcr:root>

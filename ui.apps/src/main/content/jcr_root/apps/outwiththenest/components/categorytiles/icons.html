@@ -1,0 +1,59 @@
+<template data-sly-template.icon="${@ name}">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 48 48"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2.3"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         aria-hidden="true"
+         focusable="false">
+
+        <!-- Parks and walks -->
+        <g data-sly-test="${name == 'parks' || !name}">
+            <path d="M38 7C20 7 9 15 11 28c2 10 14 12 21 3
+                     5-7 6-16 6-24Z"/>
+            <path d="M8 42 31 17M18 31l-1-11M24 25l9-1"/>
+        </g>
+
+        <!-- Swimming -->
+        <g data-sly-test="${name == 'swimming'}">
+            <path d="M4 16q5-6 10 0t10 0t10 0t10 0"/>
+            <path d="M4 25q5-6 10 0t10 0t10 0t10 0"/>
+            <path d="M4 34q5-6 10 0t10 0t10 0t10 0"/>
+        </g>
+
+        <!-- Museums -->
+        <g data-sly-test="${name == 'museum'}">
+            <path d="m5 16 19-11 19 11H5Z"/>
+            <path d="M8 20h32M8 38h32M5 43h38"/>
+            <path d="M12 21v16M20 21v16M28 21v16M36 21v16"/>
+        </g>
+
+        <!-- Clubs -->
+        <g data-sly-test="${name == 'clubs'}">
+            <circle cx="24" cy="13" r="6"/>
+            <circle cx="10" cy="19" r="4"/>
+            <circle cx="38" cy="19" r="4"/>
+            <path d="M14 40v-7a10 10 0 0 1 20 0v7"/>
+            <path d="M3 38v-5a7 7 0 0 1 9-7"/>
+            <path d="M45 38v-5a7 7 0 0 0-9-7"/>
+        </g>
+
+        <!-- Birthday fun -->
+        <g data-sly-test="${name == 'birthday'}">
+            <path d="M8 28h32v14H8zM12 19h24v9H12z"/>
+            <path d="M8 32q4 6 8 0 4 6 8 0 4 6 8 0 4 6 8 0"/>
+            <path d="M17 19v-5M24 19v-7M31 19v-5"/>
+            <path d="M17 9v1M24 6v1M31 9v1M5 43h38"/>
+        </g>
+
+        <!-- Free days out -->
+        <g data-sly-test="${name == 'sun'}">
+            <circle cx="24" cy="24" r="10"/>
+            <path d="M24 3v6M24 39v6M3 24h6M39 24h6"/>
+            <path d="m9 9 4 4m22 22 4 4M9 39l4-4M35 13l4-4"/>
+        </g>
+
+    </svg>
+</template>
