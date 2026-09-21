@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    sling:resourceSuperType="core/wcm/components/page/v3/page/cq:dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+
+                    <discoveryCard
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Discovery Card"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <featuredImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                name="./featuredImage"
+                                fieldLabel="Card image"
+                                fieldDescription="Image displayed on the Discovery Listing Grid."
+                                rootPath="/content/dam/outwiththenest"/>
+
+                            <shortDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                name="./shortDescription"
+                                fieldLabel="Short description"
+                                fieldDescription="A short summary for cards and future search results."
+                                maxlength="{Long}180"/>
+
+                            <location
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                name="./location"
+                                fieldLabel="Location">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <clevedon
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Clevedon"
+                                        value="Clevedon"/>
+                                    <bristol
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Bristol"
+                                        value="Bristol"/>
+                                    <northSomerset
+                                        jcr:primaryType="nt:unstructured"
+                                        text="North Somerset"
+                                        value="North Somerset"/>
+                                </items>
+                            </location>
+
+                            <environment
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                name="./environment"
+                                fieldLabel="Environment">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <outdoors
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Outdoors"
+                                        value="Outdoors"/>
+                                    <indoors
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Indoors"
+                                        value="Indoors"/>
+                                    <both
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Indoor &amp; Outdoor"
+                                        value="Indoor &amp; Outdoor"/>
+                                </items>
+                            </environment>
+
+                            <ageGroup
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                name="./ageGroup"
+                                fieldLabel="Age group">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <allAges
+                                        jcr:primaryType="nt:unstructured"
+                                        text="All ages"
+                                        value="All ages"/>
+                                    <ages0to4
+                                        jcr:primaryType="nt:unstructured"
+                                        text="0–4 years"
+                                        value="0–4 years"/>
+                                    <ages5to8
+                                        jcr:primaryType="nt:unstructured"
+                                        text="5–8 years"
+                                        value="5–8 years"/>
+                                    <ages9to12
+                                        jcr:primaryType="nt:unstructured"
+                                        text="9–12 years"
+                                        value="9–12 years"/>
+                                    <teens
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Teens"
+                                        value="Teens"/>
+                                </items>
+                            </ageGroup>
+
+                            <costType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                name="./costType"
+                                fieldLabel="Cost type">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <free
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Free"
+                                        value="Free"/>
+                                    <paid
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Paid"
+                                        value="Paid"/>
+                                    <mixed
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Free &amp; paid options"
+                                        value="Free &amp; paid options"/>
+                                </items>
+                            </costType>
+
+                            <price
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                name="./price"
+                                fieldLabel="Price information"
+                                fieldDescription="Example: Free, £5 per child, or Booking required."/>
+
+                            <hideInDiscovery
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./hideInDiscovery"
+                                text="Hide this page from Discovery Listing Grid"
+                                value="{Boolean}true"
+                                uncheckedValue="{Boolean}false"/>
+                        </items>
+                    </discoveryCard>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
