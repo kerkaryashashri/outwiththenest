@@ -1,6 +1,6 @@
 // Fixed header and compact Hero layout.
 
-body.page:has(.cmp-hero) {
+body.page:has(header) {
     position: relative;
 
     header.experiencefragment {
@@ -156,6 +156,6 @@ html:has(body.page .cmp-hero) {
     }
 }
 // Remove outer spacing only on pages containing a Hero.
-body.page:has(.cmp-hero) main.container {
+body.page:has(.cmp-hero,.cmp-compact-category-hero) main.container {
     padding: 0;
 }

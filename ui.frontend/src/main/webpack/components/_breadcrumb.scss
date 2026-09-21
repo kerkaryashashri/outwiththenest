@@ -1,5 +1,98 @@
-.cmp-breadcrumb {}
-.cmp-breadcrumb__list {}
-.cmp-breadcrumb__item {}
-.cmp-breadcrumb__item--active {}
-.cmp-breadcrumb__item-link {}
+main:has(.cmp-compact-category-hero) {
+    .cmp-breadcrumb {
+        position: absolute;
+    z-index: 3;
+    top: 90px;
+    width: stretch;
+        height: 0;
+        margin: 0;
+    }
+
+    .cmp-breadcrumb__list {
+        position: absolute;
+        top: 24px;
+        left: max(24px, calc((100% - 1280px) / 2));
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        max-width: calc(100vw - 48px);
+        margin: 0;
+        padding: 10px 16px;
+
+        border: 1px solid rgba(255, 255, 255, 0.55);
+        border-radius: 999px;
+        background: rgba(16, 37, 68, 0.7);
+        box-shadow: 0 8px 24px rgba(16, 37, 68, 0.2);
+
+        color: #fff;
+        font: 600 14px / 1.4 "Segoe UI", Arial, sans-serif;
+        list-style: none;
+    }
+
+    .cmp-breadcrumb__item {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        color: rgba(255, 255, 255, 0.9);
+
+        &:not(:last-child)::after {
+            content: "/";
+            color: #ffb300;
+            font-weight: 700;
+        }
+    }
+
+    .cmp-breadcrumb__item-link {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: #ffb300;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        &:focus-visible {
+            outline: 2px solid #ffb300;
+            outline-offset: 3px;
+        }
+    }
+
+    .cmp-breadcrumb__item--active {
+        color: #ffb300;
+    }
+}
+
+@supports (
+    (backdrop-filter: blur(10px)) or
+    (-webkit-backdrop-filter: blur(10px))
+) {
+    main:has(.cmp-compact-category-hero) .cmp-breadcrumb__list {
+        background: rgba(16, 37, 68, 0.62);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (max-width: 767px) {
+    main:has(.cmp-compact-category-hero) {
+        .cmp-breadcrumb__list {
+            top: 16px;
+            left: 16px;
+            gap: 6px;
+
+            max-width: calc(300vw - 32px);
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+
+        .cmp-breadcrumb__item {
+            gap: 6px;
+        }
+    }
+}

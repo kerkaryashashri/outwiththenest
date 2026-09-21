@@ -1,0 +1,85 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+
+<section class="cmp-adventure-finder"
+         data-sly-test="${properties.resultsPage}">
+
+    <div class="cmp-adventure-finder__inner">
+
+        <h2 class="cmp-adventure-finder__heading">
+            ${properties.heading || 'Find your next little adventure'}
+        </h2>
+
+        <form class="cmp-adventure-finder__form"
+              method="get"
+              action="${properties.resultsPage @ extension='html'}">
+
+            <label class="cmp-adventure-finder__field">
+                <span class="cmp-adventure-finder__label">
+                    Where?
+                </span>
+
+                <select class="cmp-adventure-finder__select"
+                        name="location">
+                    <option value="">All locations</option>
+                    <option value="Bristol">Bristol</option>
+                    <option value="Clevedon">Clevedon</option>
+                    <option value="North Somerset">North Somerset</option>
+                </select>
+            </label>
+
+            <label class="cmp-adventure-finder__field">
+                <span class="cmp-adventure-finder__label">
+                    Age group
+                </span>
+
+                <select class="cmp-adventure-finder__select"
+                        name="ageGroup">
+                    <option value="">All ages</option>
+                    <option value="0-4">Under 5s</option>
+                    <option value="5-8">5–8 years</option>
+                    <option value="9-12">9–12 years</option>
+                    <option value="13-17">13–17 years</option>
+                </select>
+            </label>
+
+            <label class="cmp-adventure-finder__field">
+                <span class="cmp-adventure-finder__label">
+                    Indoor or outdoor?
+                </span>
+
+                <select class="cmp-adventure-finder__select"
+                        name="environment">
+                    <option value="">Any setting</option>
+                    <option value="Indoors">Indoors</option>
+                    <option value="Outdoors">Outdoors</option>
+                    <option value="Indoor and outdoor">
+                        Indoor and outdoor
+                    </option>
+                </select>
+            </label>
+
+            <button class="cmp-adventure-finder__button"
+                    type="submit">
+
+                <span>
+                    ${properties.buttonText || 'Find an adventure'}
+                </span>
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.8"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     aria-hidden="true"
+                     focusable="false">
+                    <path d="M5 12h14M13 6l6 6-6 6"/>
+                </svg>
+
+            </button>
+
+        </form>
+    </div>
+</section>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty=!properties.resultsPage}"/>
