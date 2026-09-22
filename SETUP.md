@@ -1,3 +1,98 @@
+# Out With The Nest
+
+**Out With The Nest** is a family activity discovery platform designed to help parents easily find ideas for days out, activities, events, and experiences for children.
+
+## Why I Built This
+
+The idea for this project came from my own experience as a parent.
+
+While speaking with other parents, I realised that we often search for the same types of information — places to visit with children, weekend activities, parks, museums, swimming, birthday venues, indoor and outdoor activities, and local events.
+
+Sometimes families want to plan a special paid experience, while at other times they simply want to spend time together without spending any money.
+
+I wanted to bring these ideas together into one simple and easy-to-use platform.
+
+## Project Goals
+
+The project is designed to:
+
+* Help parents discover family-friendly activities easily
+* Support both free and paid activity discovery
+* Organise activities by categories such as indoor, outdoor, events, parks, swimming and birthday venues
+* Provide reusable and scalable content structures
+* Create a responsive and user-friendly experience
+* Demonstrate practical Adobe Experience Manager architecture and development
+
+## Technology Stack
+
+* Adobe Experience Manager as a Cloud Service
+* Apache Sling
+* Sling Models
+* HTL
+* OSGi
+* Java
+* HTML
+* SCSS / CSS
+* JavaScript
+* Maven
+* Git / GitHub
+
+## AEM Implementation
+
+The application is being built using a reusable component-based architecture.
+
+Current and planned implementation areas include:
+
+* Custom Header and Navigation
+* Hero / Teaser components
+* Category pages
+* Reusable activity cards
+* Search and filtering
+* Responsive layouts
+* AEM Client Libraries
+* Editable Templates
+* Content-driven authoring
+* Sling Models
+* AEM best practices for maintainability and scalability
+
+## Architecture Approach
+
+The project follows a modular AEM architecture where presentation, content and backend logic are separated wherever possible.
+
+The goal is to create components that can be reused across different sections of the website while keeping authoring simple for content editors.
+
+More detailed architecture documentation can be found in the `/docs` directory.
+
+## Current Status
+
+The project is being developed incrementally.
+
+The initial site structure, theme, page structure and core components are currently being implemented. Additional functionality and content will continue to be added as the project evolves.
+
+## Future Enhancements
+
+Planned features include:
+
+* Location-based activity discovery
+* Free vs paid filters
+* Indoor vs outdoor filters
+* Age-based activity filtering
+* Weekend event listings
+* Search functionality
+* Activity detail pages
+* Improved content modelling
+* Personalised recommendations
+
+## Purpose of This Repository
+
+Along with building a useful platform for parents, this project is also a practical implementation of my experience with Adobe Experience Manager.
+
+It allows me to explore solution architecture, reusable component development, content modelling, performance considerations and modern AEM development practices through a real-world use case.
+
+
+
+
+
 # Restore Out With The Nest on another computer
 
 This repository contains application code and a snapshot of the site's authored
