@@ -21,11 +21,17 @@ you intend to publish all of the site content and assets.
 ## Fresh local author
 
 1. Install Git, Maven 3.9.x and JDK 21 (also recorded in `.cloudmanager/java-version`).
+   On Windows, enable long paths for Git (`git config --global core.longpaths true`)
+   and prefer a short checkout path such as `C:\src\outwiththenest` because DAM
+   rendition filenames can be long. Export scripts use Windows PowerShell, curl,
+   tar and robocopy (included with current Windows installations).
 2. Obtain the AEM as a Cloud Service SDK and license through your Adobe access.
    Use the SDK matching the `aem.sdk.api` version in `pom.xml` where possible.
    The AEM Quickstart, license, users, passwords and runtime repository are not in Git.
 3. Clone this repository, or extract its source ZIP. Start a **fresh author** on port
    4502 and wait for startup to finish. Maven downloads its own Node/npm toolchain.
+   Prefer Git clone for Dispatcher development: the enabled vhost/farm entries
+   must remain symbolic links on Linux and in Cloud Manager.
 4. In the project root, run:
 
    ```sh

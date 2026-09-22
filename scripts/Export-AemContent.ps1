@@ -61,8 +61,8 @@ foreach ($root in $roots) {
     if (-not (Test-Path -LiteralPath (Join-Path $exported '.content.xml'))) { throw "Incomplete export: $root" }
 }
 # Validate every XML document before replacing any source subtree.
-Get-ChildItem (Join-Path $extracted 'jcr_root') -Recurse -File -Force -Filter '*.xml' | ForEach-Object {
-    $null = [xml](Get-Content -LiteralPath $_.FullName -Raw)
+Get-ChildItem -LiteralPath ('\\?\' + (Join-Path $extracted 'jcr_root')) -Recurse -File -Force -Filter '*.xml' | ForEach-Object {
+    $null = [xml][IO.File]::ReadAllText($_.FullName)
 }
 foreach ($root in $roots) {
     $destination = [IO.Path]::GetFullPath((Join-Path $source $root))
@@ -73,9 +73,10 @@ foreach ($root in $roots) {
     }
     New-Item -ItemType Directory -Force (Split-Path $backup), (Split-Path $destination) | Out-Null
     if (Test-Path -LiteralPath $destination) { Move-Item -LiteralPath $destination -Destination $backup }
-    Copy-Item -LiteralPath (Join-Path $extracted "jcr_root/$root") -Destination $destination -Recurse
+    & robocopy.exe (Join-Path $extracted "jcr_root/$root") $destination /E /R:1 /W:1 /NFL /NDL /NJH /NJS /NP | Out-Null
+    if ($LASTEXITCODE -ge 8) { throw "Copy failed for $root; previous source is at $backup" }
     Write-Output "Exported /$root"
 }
-$files = Get-ChildItem $source -Recurse -File -Force
+$files = Get-ChildItem -LiteralPath ('\\?\' + $source) -Recurse -File -Force
 Write-Output "Export complete: $($files.Count) source files. Previous source and snapshot: $work"
 Write-Output 'Run the full Maven build and review the Git diff before committing.'

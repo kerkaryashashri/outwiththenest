@@ -5,13 +5,13 @@
     jcr:uuid="4366de6e-d21e-462f-b7b5-fd408319f807">
     <jcr:content
         dam:assetState="processed"
-        jcr:lastModified="{Date}2026-09-22T16:20:42.040+01:00"
+        jcr:lastModified="{Date}2026-09-22T18:34:04.933+01:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
             dam:Comments="Optimized by JPEGmini 3.14.14.72670860 0xc17a4308 &#xa;"
-            dam:extracted="{Date}2026-09-22T16:20:40.642+01:00"
+            dam:extracted="{Date}2026-09-22T18:34:04.136+01:00"
             dam:Fileformat="JPEG"
             dam:MIMEtype="image/jpeg"
             dam:Numberofimages="{Long}1"
