@@ -9,7 +9,9 @@ magic text
 
 # AEM stores asset and inline-image binaries without filename extensions.
 **/renditions/original -text
+**/renditions/* -text
 **/file -text
+*.binary -text
 *.png -text
 *.jpg -text
 *.jpeg -text
