@@ -1,0 +1,33 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly>
+
+<section class="cmp-place-about"
+         data-sly-test="${properties.heading || properties.description}">
+
+    <div class="cmp-place-about__inner">
+        <div class="cmp-place-about__content">
+
+            <p class="cmp-place-about__eyebrow"
+               data-sly-test="${properties.eyebrow}">
+                ${properties.eyebrow}
+            </p>
+
+            <h2 class="cmp-place-about__heading"
+                data-sly-test="${properties.heading}">
+                ${properties.heading}
+            </h2>
+
+            <div class="cmp-place-about__description"
+                 data-sly-test="${properties.description @ context='html'}">
+                ${properties.description @ context='html'}
+            </div>
+
+            <blockquote class="cmp-place-about__quote"
+                        data-sly-test="${properties.quote}">
+                ${properties.quote}
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<sly data-sly-call="${templates.placeholder @
+    isEmpty=!(properties.heading || properties.description)}"></sly>
