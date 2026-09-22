@@ -1,0 +1,54 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly>
+
+<section class="cmp-place-practical-info"
+         data-sly-test="${properties.heading}">
+
+    <div class="cmp-place-practical-info__inner">
+        <h2 class="cmp-place-practical-info__heading">
+            ${properties.heading}
+        </h2>
+
+        <div class="cmp-place-practical-info__grid">
+
+            <article class="cmp-place-practical-info__item cmp-place-practical-info__item--best"
+                     data-sly-test="${properties.bestFor}">
+                <span class="cmp-place-practical-info__icon" aria-hidden="true"></span>
+                <div>
+                    <h3>Best for</h3>
+                    <p>${properties.bestFor}</p>
+                </div>
+            </article>
+
+            <article class="cmp-place-practical-info__item cmp-place-practical-info__item--parking"
+                     data-sly-test="${properties.parking}">
+                <span class="cmp-place-practical-info__icon" aria-hidden="true"></span>
+                <div>
+                    <h3>Parking</h3>
+                    <p>${properties.parking}</p>
+                </div>
+            </article>
+
+            <article class="cmp-place-practical-info__item cmp-place-practical-info__item--facilities"
+                     data-sly-test="${properties.facilities}">
+                <span class="cmp-place-practical-info__icon" aria-hidden="true"></span>
+                <div>
+                    <h3>Facilities</h3>
+                    <p>${properties.facilities}</p>
+                </div>
+            </article>
+
+            <article class="cmp-place-practical-info__item cmp-place-practical-info__item--tips"
+                     data-sly-test="${properties.goodToKnow}">
+                <span class="cmp-place-practical-info__icon" aria-hidden="true"></span>
+                <div>
+                    <h3>Good to know</h3>
+                    <p>${properties.goodToKnow}</p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<sly data-sly-call="${templates.placeholder @
+    isEmpty=!properties.heading}"></sly>
