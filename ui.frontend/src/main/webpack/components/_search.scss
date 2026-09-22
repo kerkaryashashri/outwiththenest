@@ -1,0 +1,245 @@
+.cmp-nest-search {
+    position: relative;
+    width: 100%;
+    color: #102544;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+
+    .cmp-search__form {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cmp-search__field {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cmp-search__input {
+        display: block;
+        width: 100%;
+        height: 44px;
+        min-height: 44px;
+        margin: 0;
+        padding: 0 44px 0 40px;
+
+        border: 1px solid rgba(16, 37, 68, 0.2);
+        border-radius: 999px;
+        background: #fff;
+        color: #102544;
+        font: 400 16px / normal "Segoe UI", Arial, sans-serif;
+
+        &::placeholder {
+            color: #596b80;
+            opacity: 1;
+        }
+
+        &:focus-visible {
+            outline: 3px solid #ffb300;
+            outline-offset: 2px;
+        }
+    }
+
+    .cmp-search__icon {
+        position: absolute;
+        inset: 50% auto auto 14px;
+        margin: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    // Keep Core's loading animation; reserve space beside clear.
+    .cmp-search__loading-indicator {
+        position: absolute;
+        top: 14px;
+        right: 44px;
+        margin: 0;
+        pointer-events: none;
+    }
+
+    .cmp-search__input {
+        padding-right: 64px;
+    }
+
+    .cmp-search__clear {
+        position: absolute;
+        inset: 0 0 auto auto;
+        width: 44px;
+        height: 44px;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        background: transparent;
+        color: #102544;
+        transform: none;
+        cursor: pointer;
+
+        .cmp-search__clear-icon {
+            display: none;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 2px;
+            background: currentColor;
+            border-radius: 2px;
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        &:focus-visible {
+            outline: 2px solid #102544;
+            outline-offset: -4px;
+        }
+    }
+
+    .cmp-nest-search__dropdown {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        z-index: 30;
+
+        width: 320px;
+        max-width: calc(100vw - 40px);
+        border-radius: 16px;
+
+        // Decorate only while Core has opened the results.
+        &:has(.cmp-search__results[aria-hidden="false"]) {
+            background: #f5f9fc;
+            box-shadow:
+                0 0 0 1px rgba(16, 37, 68, 0.12),
+                0 12px 32px rgba(16, 37, 68, 0.18);
+        }
+    }
+
+    // Exact class from the original Core Search HTML.
+    .cmp_search__info {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 12px 20px 4px;
+        color: #596b80;
+        font: normal 13px / 20px "Segoe UI", Arial, sans-serif;
+
+        * {
+            font-style: normal;
+        }
+
+        &:empty {
+            padding: 0;
+        }
+    }
+
+    .cmp-search__results {
+        position: static;
+        width: 100%;
+        max-width: none;
+        max-height: 280px;
+        overflow-y: auto;
+        margin: 0;
+        padding: 8px;
+
+        border: 0;
+        border-radius: 0 0 16px 16px;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .cmp-search__item {
+        display: block;
+        padding: 12px;
+        border-radius: 10px;
+        color: #102544;
+        font-size: 15px;
+        line-height: 1.5;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+
+        &:hover,
+        &:focus-visible,
+        &[aria-selected="true"] {
+            background: #e2effa;
+            color: #102544;
+            text-decoration: none;
+        }
+    }
+
+    .cmp-search__item-mark {
+        padding: 0 2px;
+        border-radius: 3px;
+        background: #ffe3a0;
+        color: #102544;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cmp-nest-header .cmp-nest-search {
+        .cmp-nest-search__dropdown {
+            position: static;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 10px;
+        }
+
+        .cmp-search__results {
+            max-height: 240px;
+        }
+    }
+}
+.cmp-nest-search {
+    > .cmp_search__info {
+        position: absolute;
+        inset: 54px 0 auto auto;
+        z-index: 31;
+
+        box-sizing: border-box;
+        width: 320px;
+        max-width: calc(100vw - 40px);
+        height: auto;
+        margin: 0;
+        padding: 12px 20px;
+
+        border-radius: 16px;
+        background: #f5f9fc;
+        color: #596b80;
+        font: normal 13px / 20px "Segoe UI", Arial, sans-serif;
+        pointer-events: none;
+    }
+
+    .cmp-search__results {
+        // Reserve the top row for the count.
+        padding-top: 44px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cmp-nest-header .cmp-nest-search > .cmp_search__info {
+        width: 100%;
+        max-width: 100%;
+    }
+}

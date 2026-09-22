@@ -1,0 +1,43 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.icons="icons.html"/>
+
+<section class="cmp-category-tiles"
+         data-sly-test="${resource.hasChildren}">
+
+    <div class="cmp-category-tiles__inner">
+
+        <h2 class="cmp-category-tiles__heading"
+            data-sly-test="${properties.heading}">
+            ${properties.heading}
+        </h2>
+
+        <sly data-sly-list.child="${resource.listChildren}">
+            <ul class="cmp-category-tiles__list"
+                data-sly-test="${child.name == 'tiles'}"
+                data-sly-list.tile="${child.listChildren}">
+
+                <li class="cmp-category-tiles__item">
+                    <a class="cmp-category-tiles__link"
+                       href="${tile.valueMap.pagePath @ extension='html'}">
+
+                        <span class="cmp-category-tiles__icon"
+                              aria-hidden="true">
+                            <sly data-sly-call="${icons.icon @
+                                name=tile.valueMap.icon}"/>
+                        </span>
+
+                        <span class="cmp-category-tiles__title">
+                            ${tile.valueMap.title}
+                        </span>
+
+                    </a>
+                </li>
+
+            </ul>
+        </sly>
+
+    </div>
+</section>
+
+<sly data-sly-call="${templates.placeholder @
+    isEmpty=!resource.hasChildren}"/>

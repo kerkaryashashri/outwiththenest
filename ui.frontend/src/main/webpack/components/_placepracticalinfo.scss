@@ -1,0 +1,112 @@
+.cmp-place-practical-info {
+    padding: 40px 24px 72px;
+    color: #102544;
+    background: #fffaf3;
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: clamp(28px, 4vw, 48px);
+
+        border-radius: 28px;
+        background: #eaf4fb;
+    }
+
+    &__heading {
+        margin: 0 0 30px;
+        color: #102544;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2rem, 3vw, 2.8rem);
+        line-height: 1.1;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 40px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 16px;
+        min-width: 0;
+    }
+
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.8);
+        color: #102544;
+        font-family: Georgia, serif;
+        font-size: 22px;
+    }
+
+    &__item--best &__icon::before {
+        content: "♥";
+    }
+
+    &__item--parking &__icon::before {
+        content: "P";
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    &__item--facilities &__icon::before {
+        content: "⌂";
+    }
+
+    &__item--tips &__icon::before {
+        content: "i";
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    h3 {
+        margin: 2px 0 7px;
+        color: #102544;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    p {
+        margin: 0;
+        color: #405b78;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    @media (max-width: 700px) {
+        padding: 0 16px 52px;
+
+        &__inner {
+            padding: 26px 20px;
+            border-radius: 22px;
+        }
+
+        &__heading {
+            margin-bottom: 24px;
+        }
+
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+    }
+}

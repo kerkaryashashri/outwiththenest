@@ -1,0 +1,87 @@
+<div class="cmp-nest-footer">
+    <div class="cmp-nest-footer__inner">
+
+        <div class="cmp-nest-footer__main">
+
+            <div class="cmp-nest-footer__brand">
+                <a class="cmp-nest-footer__home"
+                   href="${properties.homeUrl}">
+
+                    <span class="cmp-nest-footer__logo-wrap"
+                          data-sly-test="${properties.logo}">
+                        <img class="cmp-nest-footer__logo"
+                             src="${properties.logo}"
+                             alt=""
+                             width="56"
+                             height="56"
+                             loading="lazy">
+                    </span>
+
+                    <span class="cmp-nest-footer__name">
+                        Out With The Nest
+                    </span>
+                </a>
+
+                <p class="cmp-nest-footer__description">
+                    ${properties.description ||
+                    'Little adventures. Lovely family memories.'}
+                </p>
+
+                <p class="cmp-nest-footer__location">
+                    Bristol · Clevedon · North Somerset
+                </p>
+            </div>
+
+            <nav class="cmp-nest-footer__navigation"
+                 aria-label="Footer navigation"
+                 data-sly-test="${properties.exploreUrl ||
+                     properties.placesUrl || properties.aboutUrl}">
+
+                <h2 class="cmp-nest-footer__heading">
+                    Explore the Nest
+                </h2>
+
+                <ul class="cmp-nest-footer__links">
+                    <li data-sly-test="${properties.exploreUrl}">
+                        <a href="${properties.exploreUrl}">
+                            Explore activities
+                        </a>
+                    </li>
+
+                    <li data-sly-test="${properties.placesUrl}">
+                        <a href="${properties.placesUrl}">
+                            Places to visit
+                        </a>
+                    </li>
+
+                    <li data-sly-test="${properties.aboutUrl}">
+                        <a href="${properties.aboutUrl}">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="cmp-nest-footer__message">
+                <span class="cmp-nest-footer__eyebrow">
+                    GO OUT. MAKE MEMORIES.
+                </span>
+
+                <p>
+                    Happier families.<br>
+                    Brighter days together.
+                </p>
+
+                <span class="cmp-nest-footer__heart"
+                      aria-hidden="true">♡</span>
+            </div>
+
+        </div>
+
+        <div class="cmp-nest-footer__bottom">
+            <p>${properties.copyrightText}</p>
+            <span>Made for little adventures.</span>
+        </div>
+
+    </div>
+</div>

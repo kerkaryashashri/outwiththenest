@@ -1,0 +1,166 @@
+.cmp-place-detail-hero {
+    position: relative;
+    isolation: isolate;
+    min-height: 560px;
+    overflow: hidden;
+    color: #102544;
+    background: #d9eaf7;
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+
+    &__image,
+    &__overlay {
+        position: absolute;
+        inset: 0;
+    }
+
+    &__image {
+        z-index: -2;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__overlay {
+        z-index: -1;
+        background:
+            linear-gradient(
+                90deg,
+                rgba(16, 37, 68, 0.44) 0%,
+                rgba(16, 37, 68, 0.12) 52%,
+                rgba(16, 37, 68, 0.04) 100%
+            );
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+
+        width: 100%;
+        min-height: 560px;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 150px 24px 56px;
+    }
+
+    &__content {
+        width: min(100%, 560px);
+        padding: clamp(26px, 3vw, 44px);
+
+        border: 1px solid rgba(255, 255, 255, 0.82);
+        border-radius: 28px;
+        background: rgba(246, 251, 255, 0.9);
+        box-shadow: 0 18px 46px rgba(16, 37, 68, 0.2);
+    }
+
+    &__eyebrow {
+        margin: 0 0 14px;
+        color: #34506f;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        line-height: 1.4;
+    }
+
+    &__title {
+        margin: 0;
+        color: #102544;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2.5rem, 4.5vw, 4.4rem);
+        line-height: 1;
+        letter-spacing: -0.035em;
+    }
+
+    &__description {
+        margin: 20px 0 0;
+        color: #294967;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+        line-height: 1.55;
+    }
+
+    &__meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+    }
+
+    &__chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 38px;
+        padding: 8px 13px;
+
+        border: 1px solid rgba(207, 223, 237, 0.95);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.86);
+
+        color: #102544;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    @media (max-width: 767px) {
+        min-height: 610px;
+
+        &__image img {
+            object-position: 65% center;
+        }
+
+        &__overlay {
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(16, 37, 68, 0.5) 0%,
+                    rgba(16, 37, 68, 0.08) 75%
+                );
+        }
+
+        &__inner {
+            min-height: 610px;
+            padding: 170px 16px 28px;
+        }
+
+        &__content {
+            padding: 24px 20px;
+            border-radius: 22px;
+        }
+
+        &__title {
+            font-size: clamp(2.4rem, 12vw, 3.5rem);
+        }
+
+        &__meta {
+            gap: 8px;
+        }
+
+        &__chip {
+            min-height: 34px;
+            padding: 7px 10px;
+            font-size: 13px;
+        }
+    }
+}
+
+@supports (
+    (backdrop-filter: blur(16px)) or
+    (-webkit-backdrop-filter: blur(16px))
+) {
+    .cmp-place-detail-hero__content {
+        background: rgba(246, 251, 255, 0.76);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+    }
+}

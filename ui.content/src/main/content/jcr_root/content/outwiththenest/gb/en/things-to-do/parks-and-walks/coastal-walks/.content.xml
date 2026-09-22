@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2026-09-22T16:33:43.445+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Coastal Walks"
+        sling:resourceType="outwiththenest/components/page"
+        ageGroup="All ages"
+        costType="Free"
+        environment="Outdoors"
+        featuredImage="/content/dam/outwiththenest/ClevedonPier.jpg"
+        hideInDiscovery="false"
+        location="Clevedon"
+        navTitle="Coastal Walks"
+        pageTitle="Coastal Walks"
+        price="0"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any"
+        shortDescription="The Clevedon Coastal Walk combines dramatic tidal views of the Bristol Channel, rich Victorian seaside heritage, and rugged clifftops.">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="outwiththenest/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="outwiththenest/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="outwiththenest/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="outwiththenest/components/container"
+                    layout="responsiveGrid">
+                    <placedetailhero
+                        jcr:created="{Date}2026-09-21T22:10:23.489+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-09-21T22:10:45.765+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/placedetailhero"
+                        eyebrow="PLAN A FAMILY DAY OUT"/>
+                    <container
+                        jcr:created="{Date}2026-09-22T10:05:02.460+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-09-22T10:05:02.460+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/container">
+                        <placeabout
+                            jcr:created="{Date}2026-09-22T09:31:43.583+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-09-22T09:32:36.030+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="outwiththenest/components/placeabout"
+                            description="&lt;p>Clevedon’s coastal paths offer a wonderful mix of sea views, interesting landmarks and fresh air, making them perfect for family adventures. Stroll along the seafront, take in views of the iconic pier, spot wildlife and enjoy plenty of space for little legs to explore.&lt;/p>&#xd;&#xa;&lt;p>Whether you choose a gentle walk by the water or a longer wander along the coastline, this is a lovely place to slow down, enjoy the scenery and make happy memories together.&lt;/p>&#xd;&#xa;"
+                            eyebrow="EXPLORE CLEVEDON"
+                            heading="About this place"
+                            textIsRich="true">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="5"/>
+                            </cq:responsive>
+                        </placeabout>
+                        <placepracticalinfo
+                            jcr:created="{Date}2026-09-22T09:52:59.393+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-09-22T09:55:44.781+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="outwiththenest/components/placepracticalinfo"
+                            bestFor="Families looking for an easy-going walk, sea views, fresh air and plenty of space for children to explore."
+                            facilities="Cafés, benches and toilets can be found close to the seafront and Clevedon Pier area."
+                            goodToKnow="The main promenade is mostly flat and buggy-friendly. Some coastal paths may be uneven or muddy after rain, so sturdy shoes are useful."
+                            heading="Practical information"
+                            parking="Several public car parks are available around Clevedon town centre and near the seafront.">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="none"
+                                    offset="0"
+                                    width="6"/>
+                            </cq:responsive>
+                        </placepracticalinfo>
+                        <placevisitmap
+                            jcr:created="{Date}2026-09-22T10:57:04.879+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-09-22T12:27:45.014+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="outwiththenest/components/placevisitmap"
+                            address="Clevedon Pier, The Beach, Clevedon, BS21 7QU"
+                            directionsUrl="https://share.google/WKrLFhiwHYCsAiKr7"
+                            heading="Plan your visit"
+                            mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18003.641522176342!2d-2.8540927999999997!3d51.44284355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suk!4v1790071236189!5m2!1sen!2suk"
+                            postcode="BS21 7ST"
+                            travelNote="Clevedon town centre has several public car parks within walking distance. The seafront promenade is mostly flat and suitable for buggies and scooters."/>
+                    </container>
+                </container>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2026-09-21T18:19:58.144+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            fileName="sea.jpg">
+            <file/>
+        </cq:featuredimage>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="/conf/outwiththenest/settings/wcm/templates/(?!xf-).*"
+        cq:conf="/conf/outwiththenest"
+        cq:lastModified="{Date}2026-09-21T12:18:28.671+01:00"
+        cq:lastModifiedBy="admin"
+        cq:redirectTarget="/content/outwiththenest/gb/en"
+        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Out With The Nest"
+        sling:configRef="/conf/outwiththenest"
+        sling:redirect="true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="outwiththenest/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2026-09-21T12:18:28.597+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            fileName="feathered-family-nest-stockcake.jpg">
+            <file/>
+        </cq:featuredimage>
+    </jcr:content>
+    <gb/>
+</jcr:root>

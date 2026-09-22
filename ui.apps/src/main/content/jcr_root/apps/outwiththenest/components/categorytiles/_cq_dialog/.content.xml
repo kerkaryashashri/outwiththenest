@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Category Tiles"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+
+            <heading
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                name="./heading"
+                fieldLabel="Section heading"
+                value="What shall we do today?"/>
+
+            <tiles
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                fieldLabel="Category tiles"
+                fieldDescription="Add, remove or drag tiles to change their order."
+                composite="{Boolean}true">
+
+                <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    name="./tiles">
+                    <items jcr:primaryType="nt:unstructured">
+
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            name="title"
+                            fieldLabel="Title"
+                            required="{Boolean}true"/>
+
+                        <icon
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            name="icon"
+                            fieldLabel="Icon">
+                            <items jcr:primaryType="nt:unstructured">
+                                <parks
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Parks and Walks"
+                                    value="parks"
+                                    selected="{Boolean}true"/>
+                                <swimming
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Swimming"
+                                    value="swimming"/>
+                                <museum
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Museums"
+                                    value="museum"/>
+                                <clubs
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Clubs"
+                                    value="clubs"/>
+                                <birthday
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Birthday Fun"
+                                    value="birthday"/>
+                                <sun
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Free Days Out"
+                                    value="sun"/>
+                            </items>
+                        </icon>
+
+                        <pagePath
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                            name="pagePath"
+                            fieldLabel="Category page"
+                            fieldDescription="Select a page within your website."
+                            rootPath="/content/outwiththenest"
+                            required="{Boolean}true"/>
+
+                    </items>
+                </field>
+            </tiles>
+
+        </items>
+    </content>
+</jcr:root>

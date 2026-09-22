@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2026-09-22T16:52:46.306+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
+        jcr:mixinTypes="[mix:lockable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home"
+        sling:resourceType="outwiththenest/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <container jcr:primaryType="nt:unstructured">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="outwiththenest/components/container">
+                    <herocarousel
+                        jcr:created="{Date}2026-09-17T17:13:23.855+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-09-17T19:57:28.828+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/herocarousel"
+                        accessibilityAutoItemTitles="false"
+                        accessibilityNext=">"
+                        accessibilityPrevious="&lt;"
+                        activeItem="hero_1337301770"
+                        autopauseDisabled="true"
+                        autoplay="true"
+                        delay="5000">
+                        <hero_1337301770_copy_1496400836
+                            cq:panelTitle="Little adventures. Lovely family memories"
+                            jcr:created="{Date}2026-09-17T16:47:16.542+01:00"
+                            jcr:createdBy="admin"
+                            jcr:description="&lt;p>Discover places to play, explore and spend time together.&lt;/p>&#xd;&#xa;"
+                            jcr:lastModified="{Date}2026-09-17T20:24:02.009+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Little adventures. Lovely family memories"
+                            sling:resourceType="outwiththenest/components/hero"
+                            alt="Family outing"
+                            altValueFromDAM="true"
+                            descriptionFromPage="false"
+                            fileName="heroImage1.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            linkURL="/content/outwiththenest/gb/en/products/category-page"
+                            pretitle="BRISTOL · CLEVEDON · NORTH SOMERSET"
+                            textIsRich="true"
+                            titleFromPage="false">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="11"/>
+                            </cq:responsive>
+                            <file/>
+                            <actions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/outwiththenest/gb/en/products/category-page"
+                                    linkTarget="_self"
+                                    text="Category page"/>
+                            </actions>
+                        </hero_1337301770_copy_1496400836>
+                        <hero_1337301770_copy
+                            cq:panelTitle="Little adventures. Lovely family memories"
+                            jcr:created="{Date}2026-09-17T16:47:16.542+01:00"
+                            jcr:createdBy="admin"
+                            jcr:description="&lt;p>Discover places to play, explore and spend time together.&lt;/p>&#xd;&#xa;"
+                            jcr:lastModified="{Date}2026-09-17T20:16:25.213+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Little adventures. Lovely family memories"
+                            sling:resourceType="outwiththenest/components/hero"
+                            alt="Family outing"
+                            altValueFromDAM="false"
+                            descriptionFromPage="false"
+                            fileName="heroImage1.png"
+                            fileReference="/content/dam/wknd-shared/en/magazine/western-australia/adobe-waadobe-wa-mg-3094.jpg"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_blank"
+                            linkURL="/content/outwiththenest/gb/en/products/category-page"
+                            pretitle="BRISTOL · CLEVEDON · NORTH SOMERSET"
+                            textIsRich="true"
+                            titleFromPage="false">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="11"/>
+                            </cq:responsive>
+                            <file/>
+                            <actions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/outwiththenest/gb/en/products/category-page"
+                                    linkTarget="_self"
+                                    text="Category page"/>
+                            </actions>
+                        </hero_1337301770_copy>
+                        <hero_1337301770
+                            cq:panelTitle="Little adventures. Lovely family memories"
+                            jcr:created="{Date}2026-09-17T16:47:16.542+01:00"
+                            jcr:createdBy="admin"
+                            jcr:description="&lt;p>Discover places to play, explore and spend time together.&lt;/p>&#xd;&#xa;"
+                            jcr:lastModified="{Date}2026-09-17T20:21:54.685+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Little adventures. Lovely family memories"
+                            sling:resourceType="outwiththenest/components/hero"
+                            alt="Family outing"
+                            altValueFromDAM="false"
+                            descriptionFromPage="false"
+                            fileName="heroImage1.png"
+                            fileReference="/content/dam/wknd-shared/en/magazine/alaska-adventure/camp-alaska.jpg"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            linkURL="/content/outwiththenest/gb/en/products/category-page"
+                            pretitle="BRISTOL · CLEVEDON · NORTH SOMERSET"
+                            textIsRich="true"
+                            titleFromPage="false">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="11"/>
+                            </cq:responsive>
+                            <file/>
+                            <actions jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/outwiththenest/gb/en/products/category-page"
+                                    linkTarget="_self"
+                                    text="Category page"/>
+                            </actions>
+                        </hero_1337301770>
+                    </herocarousel>
+                    <adventurefinder
+                        jcr:created="{Date}2026-09-20T19:50:45.186+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-09-20T19:51:00.805+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/adventurefinder"
+                        buttonText="Find an adventure"
+                        heading="Find your next little adventure"
+                        resultsPage="/content/outwiththenest/gb/en/search"/>
+                    <categorytiles
+                        jcr:created="{Date}2026-09-20T16:58:16.185+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-09-20T17:01:11.209+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/categorytiles"
+                        heading="What shall we do today?">
+                        <tiles jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                icon="parks"
+                                pagePath="/content/outwiththenest/gb/en/products/category-page"
+                                title="Parks &amp; Walks"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                icon="swimming"
+                                pagePath="/content/outwiththenest/gb/en/products/category-page"
+                                title="Swimming"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                icon="museum"
+                                pagePath="/content/outwiththenest/gb/en/products/category-page"
+                                title="Museums"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                icon="clubs"
+                                pagePath="/content/outwiththenest/gb/en/products/category-page"
+                                title="Clubs"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                icon="birthday"
+                                pagePath="/content/outwiththenest/gb/en/products/category-page"
+                                title="Birthday Fun"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                icon="sun"
+                                pagePath="/content/outwiththenest/gb/en/products/category-page"
+                                title="Free Days Out"/>
+                        </tiles>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </categorytiles>
+                    <container
+                        jcr:created="{Date}2026-09-20T17:59:14.684+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-09-20T17:59:14.684+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/container">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="10"/>
+                            <tablet
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="11"/>
+                        </cq:responsive>
+                        <title
+                            jcr:created="{Date}2026-09-20T17:38:53.041+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-09-20T17:40:00.973+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Find your next little Adventure"
+                            sling:resourceType="outwiththenest/components/title"
+                            linkTarget="_self"
+                            type="h2">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="10"/>
+                            </cq:responsive>
+                        </title>
+                        <placecard_copy_30375
+                            jcr:created="{Date}2026-09-20T17:14:51.435+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-09-20T17:24:03.939+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="outwiththenest/components/placecard"
+                            environment="Outdoors"
+                            fileReference="/content/dam/outwiththenest/ClevedonPier.jpg"
+                            imageAlt="Clevedon Pier"
+                            location="Clevedon"
+                            pagePath="/content/outwiththenest/gb/en/products/product-page"
+                            title="Coastal wanders">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                                <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="newline"
+                                    offset="0"
+                                    width="10"/>
+                            </cq:responsive>
+                        </placecard_copy_30375>
+                        <placecard_copy_30375_685470590
+                            jcr:created="{Date}2026-09-20T17:14:51.435+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-09-20T18:19:13.364+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="outwiththenest/components/placecard"
+                            environment="Outdoors"
+                            fileReference="/content/dam/outwiththenest/HangingBridgeBristol.jpg"
+                            imageAlt="Hanging Bridge Bristol"
+                            location="Bristol"
+                            pagePath="/content/outwiththenest/gb/en/products/product-page"
+                            title="Room to run wild">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                                <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="none"/>
+                            </cq:responsive>
+                        </placecard_copy_30375_685470590>
+                        <placecard_copy_30375_25779847
+                            jcr:created="{Date}2026-09-20T17:14:51.435+01:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-09-20T18:20:05.786+01:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="outwiththenest/components/placecard"
+                            environment="Indoors"
+                            fileReference="/content/dam/outwiththenest/Bristol-Museum-Art-Gallery-David-Winn-Morgan.jpg"
+                            imageAlt="Bristol Museum"
+                            location="Bristol"
+                            pagePath="/content/outwiththenest/gb/en/products/product-page"
+                            title="Rainy days discovery">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                                <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="5"
+                                    width="5"/>
+                            </cq:responsive>
+                        </placecard_copy_30375_25779847>
+                    </container>
+                    <promobanner
+                        jcr:created="{Date}2026-09-20T19:02:54.068+01:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Discover lovely family days out that don’t cost a fortune.&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2026-09-20T19:10:05.984+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Big memories. Little budgets."
+                        sling:resourceType="outwiththenest/components/promobanner"
+                        alt="sea"
+                        descriptionFromPage="false"
+                        fileName="sea.jpg"
+                        imageFromPageImage="false"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        linkURL="/content/outwiththenest/gb/en/products"
+                        pretitle="MORE SMILES. LESS SPENDING."
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <file/>
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/outwiththenest/gb/en/products"
+                                linkTarget="_self"
+                                text="Explore free days out"/>
+                        </actions>
+                    </promobanner>
+                </container>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2026-09-21T10:39:45.831+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"/>
+    </jcr:content>
+</jcr:root>

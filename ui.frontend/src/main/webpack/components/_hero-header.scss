@@ -1,0 +1,161 @@
+// Fixed header and compact Hero layout.
+
+body.page:has(header) {
+    position: relative;
+
+    header.experiencefragment {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 100;
+
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        // Same blue tint at the top and after scrolling.
+        background: #023455bb;
+        box-shadow: 0 3px 18px rgba(16, 37, 68, 0.12);
+
+        pointer-events: none;
+    }
+
+    .cmp-nest-header {
+        box-sizing: border-box;
+        padding: 12px 24px;
+    }
+
+    .cmp-nest-header__bar {
+        position: relative;
+        isolation: isolate;
+        pointer-events: auto;
+
+        box-sizing: border-box;
+        min-height: 72px;
+        padding: 10px 20px;
+
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        box-shadow: 0 8px 28px rgba(16, 37, 68, 0.12);
+
+        // Keep fixed mobile navigation independent of the bar.
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+
+            border-radius: inherit;
+            background: #edf5fc;
+            pointer-events: none;
+        }
+    }
+
+    // Hero content clears the fixed header.
+    .cmp-hero .cmp-teaser {
+        box-sizing: border-box;
+        min-height: 600px;
+        align-items: center;
+
+        padding:
+            130px
+            max(72px, calc((100% - 1280px) / 2))
+            64px;
+    }
+
+    .cmp-hero .cmp-teaser__content {
+        box-sizing: border-box;
+        width: min(100%, 520px);
+        padding: 28px 32px;
+        border-radius: 26px;
+    }
+
+    .cmp-hero .cmp-teaser__pretitle {
+        margin-bottom: 14px;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+    }
+
+    .cmp-hero .cmp-teaser__title {
+        margin-bottom: 16px;
+        font-size: clamp(2rem, 3.2vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+    }
+
+    .cmp-hero .cmp-teaser__description {
+        font-size: 17px;
+        line-height: 1.55;
+    }
+
+    .cmp-hero .cmp-teaser__action-container {
+        margin-top: 20px;
+    }
+}
+
+html:has(body.page .cmp-hero) {
+    scroll-padding-top: 120px;
+}
+
+// Frosted ice-blue surface, with an opaque fallback above.
+@supports (
+    (backdrop-filter: blur(18px)) or
+    (-webkit-backdrop-filter: blur(18px))
+) {
+    body.page:has(.cmp-hero) .cmp-nest-header__bar::before {
+        background: rgba(237, 245, 252, 0.94);
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
+    }
+}
+
+// Mobile layout.
+@media (max-width: 767px) {
+    body.page:has(.cmp-hero) {
+        .cmp-nest-header {
+            padding: 10px;
+        }
+
+        .cmp-nest-header__bar {
+            min-height: 64px;
+            padding: 10px 12px;
+        }
+
+        .cmp-hero .cmp-teaser {
+            min-height: 620px;
+            align-items: flex-end;
+            padding: 150px 52px 64px;
+        }
+
+        .cmp-hero .cmp-teaser__content {
+            width: 100%;
+            padding: 22px 18px;
+            border-radius: 22px;
+        }
+
+        .cmp-hero .cmp-teaser__title {
+            font-size: clamp(1.8rem, 6.5vw, 2.4rem);
+        }
+
+        .cmp-hero .cmp-teaser__pretitle {
+            font-size: 10px;
+            letter-spacing: 0.08em;
+        }
+
+        .cmp-hero .cmp-teaser__description {
+            font-size: 16px;
+        }
+    }
+
+    html:has(body.page .cmp-hero) {
+        scroll-padding-top: 104px;
+    }
+}
+// Remove outer spacing only on pages containing a Hero.
+body.page:has(.cmp-hero,.cmp-compact-category-hero,.cmp-place-detail-hero) main.container {
+    padding: 0;
+}

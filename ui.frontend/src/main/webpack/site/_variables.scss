@@ -1,0 +1,22 @@
+// Typography
+$font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+$font-size: 16px;
+$font-height: 1.6;
+
+// Out With The Nest palette
+$nest-forest: #173F35;
+$nest-cream: #FFF9F0;
+$nest-yellow: #F4C95D;
+$nest-sage: #E8EFE5;
+$nest-charcoal: #26332D;
+
+// Existing theme variables
+$color-foreground: $nest-charcoal;
+$color-background: $nest-cream;
+$color-link: $nest-forest;
+
+// Keep the same palette when the device uses dark mode.
+// We can create a separate dark theme later.
+$color-foreground-dark: $color-foreground;
+$color-background-dark: $color-background;
+$color-link-dark: $color-link;

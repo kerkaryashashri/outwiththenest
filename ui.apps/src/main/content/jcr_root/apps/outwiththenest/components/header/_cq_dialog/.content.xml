@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Nest Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+
+        <items jcr:primaryType="nt:unstructured">
+
+            <brandName
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Brand name"
+                name="./brandName"
+                value="Out With The Nest"
+                required="{Boolean}true"/>
+
+            <logo
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                fieldLabel="Logo asset"
+                fieldDescription="Select the logo uploaded to Assets."
+                name="./logo"
+                rootPath="/content/dam"
+                required="{Boolean}true"/>
+
+            <homeUrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Home link"
+                fieldDescription="For this local setup, enter the page URL including .html."
+                name="./homeUrl"
+                value="/content/outwiththenest/gb/en/home.html"
+                required="{Boolean}true"/>
+
+            <showLanguage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                text="Show language navigation"
+                name="./showLanguage"
+                value="{Boolean}true"
+                uncheckedValue="{Boolean}false"/>
+
+        </items>
+    </content>
+</jcr:root>

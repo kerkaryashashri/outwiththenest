@@ -1,0 +1,56 @@
+<sly data-sly-use.model="com.outwiththenest.core.models.PlaceDetailHeroModel"></sly>
+
+<section class="cmp-place-detail-hero">
+    <div class="cmp-place-detail-hero__image"
+         data-sly-test="${model.featuredImage}">
+        <img src="${model.featuredImage @ context='uri'}"
+             alt="${model.title}">
+    </div>
+
+    <div class="cmp-place-detail-hero__overlay"></div>
+
+    <div class="cmp-place-detail-hero__inner">
+        <div class="cmp-place-detail-hero__content">
+            <p class="cmp-place-detail-hero__eyebrow">
+                ${properties.eyebrow || 'PLAN A FAMILY DAY OUT'}
+            </p>
+
+            <h1 class="cmp-place-detail-hero__title">
+                ${model.title}
+            </h1>
+
+            <p class="cmp-place-detail-hero__description"
+               data-sly-test="${model.description}">
+                ${model.description}
+            </p>
+
+            <div class="cmp-place-detail-hero__meta"
+                 data-sly-test="${model.location || model.environment || model.ageGroup || model.costType}">
+
+                <span class="cmp-place-detail-hero__chip"
+                      data-sly-test="${model.location}">
+                    <span aria-hidden="true">⌖</span>
+                    ${model.location}
+                </span>
+
+                <span class="cmp-place-detail-hero__chip"
+                      data-sly-test="${model.environment}">
+                    <span aria-hidden="true">♣</span>
+                    ${model.environment}
+                </span>
+
+                <span class="cmp-place-detail-hero__chip"
+                      data-sly-test="${model.ageGroup}">
+                    <span aria-hidden="true">●</span>
+                    ${model.ageGroup}
+                </span>
+
+                <span class="cmp-place-detail-hero__chip"
+                      data-sly-test="${model.costType}">
+                    <span aria-hidden="true">£</span>
+                    ${model.costType}
+                </span>
+            </div>
+        </div>
+    </div>
+</section>

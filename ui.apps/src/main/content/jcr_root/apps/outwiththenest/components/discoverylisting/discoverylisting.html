@@ -1,0 +1,80 @@
+<sly data-sly-use.model="com.outwiththenest.core.models.DiscoveryListingModel"></sly>
+
+<section class="cmp-discovery-listing">
+    <div class="cmp-discovery-listing__inner">
+
+        <header class="cmp-discovery-listing__header">
+            <h2 class="cmp-discovery-listing__title">
+                ${properties.title || 'Places to explore'}
+            </h2>
+
+            <p class="cmp-discovery-listing__count"
+               data-sly-test="${model.showCount}">
+                ${model.count} places to discover
+            </p>
+        </header>
+
+        <ul class="cmp-discovery-listing__list"
+            data-sly-test="${model.cards.size}">
+
+            <sly data-sly-list.card="${model.cards}">
+                <li class="cmp-discovery-listing__item">
+                    <a class="cmp-discovery-listing__link"
+                       href="${card.url @ context='uri'}">
+
+                        <div class="cmp-discovery-listing__image"
+                             data-sly-test="${card.featuredImage}">
+                            <img src="${card.featuredImage @ context='uri'}"
+                                 alt="${card.title}">
+                        </div>
+
+                        <div class="cmp-discovery-listing__content">
+                            <h3 class="cmp-discovery-listing__card-title">
+                                ${card.title}
+                            </h3>
+
+                            <p class="cmp-discovery-listing__description"
+                               data-sly-test="${card.shortDescription}">
+                                ${card.shortDescription}
+                            </p>
+
+                            <p class="cmp-discovery-listing__meta"
+                               data-sly-test="${card.location || card.environment}">
+                                <span class="cmp-discovery-listing__meta-item"
+                                      data-sly-test="${card.location}">
+                                    ${card.location}
+                                </span>
+
+                                <span class="cmp-discovery-listing__meta-item"
+                                      data-sly-test="${card.environment}">
+                                    ${card.environment}
+                                </span>
+                            </p>
+
+                            <div class="cmp-discovery-listing__tags"
+                                 data-sly-test="${card.ageGroup || card.costType}">
+                                <span class="cmp-discovery-listing__tag"
+                                      data-sly-test="${card.ageGroup}">
+                                    ${card.ageGroup}
+                                </span>
+
+                                <span class="cmp-discovery-listing__tag"
+                                      data-sly-test="${card.costType}">
+                                    ${card.costType}
+                                </span>
+                            </div>
+
+                            <p class="cmp-discovery-listing__price"
+                               data-sly-test="${card.price}">
+                                ${card.price}
+                            </p>
+
+                            <span class="cmp-discovery-listing__arrow"
+                                  aria-hidden="true"></span>
+                        </div>
+                    </a>
+                </li>
+            </sly>
+        </ul>
+    </div>
+</section>

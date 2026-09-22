@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:conf="/conf/outwiththenest"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Out With The Nest">
+        <folderThumbnail/>
+    </jcr:content>
+    <asset.jpg/>
+    <logo.png/>
+    <Bristol-Museum-Art-Gallery-David-Winn-Morgan.jpg/>
+    <ClevedonPier.jpg/>
+    <HangingBridgeBristol.jpg/>
+    <sea.jpg/>
+    <marine-lake-salthouse.jpg/>
+</jcr:root>

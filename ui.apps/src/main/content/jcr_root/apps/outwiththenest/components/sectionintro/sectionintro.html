@@ -1,0 +1,19 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+
+<section class="cmp-section-intro"
+         data-sly-test="${properties.title || properties.description}">
+    <div class="cmp-section-intro__inner">
+        <h2 class="cmp-section-intro__title"
+            data-sly-test="${properties.title}">
+            ${properties.title}
+        </h2>
+
+        <p class="cmp-section-intro__description"
+           data-sly-test="${properties.description}">
+            ${properties.description}
+        </p>
+    </div>
+</section>
+
+<sly data-sly-call="${templates.placeholder @
+    isEmpty=!properties.title && !properties.description}"/>

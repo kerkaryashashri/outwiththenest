@@ -1,0 +1,18 @@
+* text=auto
+
+*.conf text
+*.vhost text
+*.rules text
+*.vars text
+*.any text
+magic text
+
+# AEM stores asset and inline-image binaries without filename extensions.
+**/renditions/original -text
+**/file -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.webp -text
+*.pdf -text

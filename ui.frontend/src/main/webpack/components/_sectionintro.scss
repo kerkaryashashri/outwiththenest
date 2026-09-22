@@ -1,0 +1,54 @@
+.cmp-section-intro {
+    padding: clamp(20px, 7vw, 0px) 24px 20px;
+    background: #fffaf3;
+    color: #102544;
+    text-align: center;
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+
+    &__inner {
+        max-width: 820px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0;
+        color: #102544;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        font-weight: 700;
+        line-height: 1.12;
+        letter-spacing: -0.03em;
+    }
+
+    &__title::after {
+        content: "";
+        display: block;
+        width: 54px;
+        height: 4px;
+        margin: 18px auto 16px;
+        border-radius: 999px;
+        background: #ffb300;
+    }
+
+    &__description {
+        max-width: 680px;
+        margin: 0 auto;
+        color: #526780;
+        font: 400 clamp(1rem, 1.6vw, 1.2rem) / 1.6
+            "Segoe UI", Arial, sans-serif;
+    }
+}
+
+@media (max-width: 767px) {
+    .cmp-section-intro {
+        padding: 44px 20px 24px;
+
+        &__title::after {
+            margin: 14px auto;
+        }
+    }
+}

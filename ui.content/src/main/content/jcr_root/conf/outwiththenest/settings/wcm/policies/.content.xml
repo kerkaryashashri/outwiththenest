@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <outwiththenest jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <container jcr:primaryType="nt:unstructured">
+                <content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Out With The Nest Content"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:Out With The Nest - Content,group:Out With The Nest - Structure,group:Out With The Nest - Form]"
+                    layout="responsiveGrid"/>
+                <main
+                    cq:styleDefaultElement="main"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Nest main"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:Out With The Nest - Content,group:Out With The Nest - Structure,group:Out With The Nest - Form]"
+                    layout="responsiveGrid"/>
+                <policy_27528095247200
+                    jcr:lastModified="{Date}2026-09-22T16:50:20.816+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Responsive Container "
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    layout="responsiveGrid"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_27528095247200>
+            </container>
+            <page jcr:primaryType="nt:unstructured">
+                <site
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Out With The Nest Site"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[outwiththenest.base]"
+                    clientlibsJsHead="[outwiththenest.dependencies]"/>
+            </page>
+            <experiencefragment jcr:primaryType="nt:unstructured">
+                <header
+                    cq:styleDefaultElement="header"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Nest header"
+                    sling:resourceType="wcm/core/components/policy/policy"/>
+                <footer
+                    cq:styleDefaultElement="footer"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Nest footer"
+                    sling:resourceType="wcm/core/components/policy/policy"/>
+            </experiencefragment>
+        </components>
+    </outwiththenest>
+</jcr:root>

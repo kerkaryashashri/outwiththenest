@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Discovery Listing Grid"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+
+            <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                name="./title"
+                fieldLabel="Listing heading"
+                required="{Boolean}true"
+                value="Places to explore"/>
+
+            <sourcePage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                name="./sourcePage"
+                fieldLabel="Source page (optional)"
+                fieldDescription="Leave blank to show direct child pages of the current page."
+                rootPath="/content/outwiththenest"/>
+
+            <maxItems
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                name="./maxItems"
+                fieldLabel="Maximum cards"
+                fieldDescription="Leave as 0 to display all direct child pages."
+                min="{Long}0"
+                value="{Long}0"/>
+
+            <showCount
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                name="./showCount"
+                text="Show number of places"
+                value="true"
+                checked="{Boolean}true"
+                uncheckedValue="false"/>
+
+        </items>
+    </content>
+</jcr:root>

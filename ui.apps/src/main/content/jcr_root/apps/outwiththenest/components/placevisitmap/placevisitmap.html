@@ -1,0 +1,62 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.model="com.outwiththenest.core.models.PlaceVisitMapModel"/>
+
+<sly data-sly-set.directionsUrl="${model.directionsUrl || properties.directionsUrl}"/>
+
+<section class="cmp-place-visit-map"
+         data-sly-test="${properties.address || properties.mapEmbedUrl}">
+
+    <div class="cmp-place-visit-map__inner">
+
+        <div class="cmp-place-visit-map__content">
+            <p class="cmp-place-visit-map__eyebrow">FIND YOUR WAY</p>
+
+            <h2 class="cmp-place-visit-map__heading">
+                ${properties.heading || 'Plan your visit'}
+            </h2>
+
+            <p class="cmp-place-visit-map__address"
+               data-sly-test="${properties.address}">
+                <span class="cmp-place-visit-map__pin" aria-hidden="true"></span>
+                ${properties.address}
+            </p>
+
+            <p class="cmp-place-visit-map__resolved-location"
+               data-sly-test="${model.locationFound}">
+                Location verified for ${model.resolvedPostcode}
+                <span data-sly-test="${model.region}">
+                    · ${model.region}
+                </span>
+            </p>
+
+            <p class="cmp-place-visit-map__note"
+               data-sly-test="${properties.travelNote}">
+                ${properties.travelNote}
+            </p>
+
+            <a class="cmp-place-visit-map__directions"
+               data-sly-test="${directionsUrl}"
+               href="${directionsUrl @ context='uri'}"
+               target="_blank"
+               rel="noopener noreferrer">
+                Get directions
+                <span aria-hidden="true">→</span>
+            </a>
+        </div>
+
+        <div class="cmp-place-visit-map__map"
+             data-sly-test="${properties.mapEmbedUrl}">
+            <iframe
+                src="${properties.mapEmbedUrl @ context='uri'}"
+                title="${properties.heading || 'Location map'}"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<sly data-sly-call="${templates.placeholder @
+    isEmpty=!properties.address && !properties.mapEmbedUrl}"/>
