@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0"
+    jcr:created="{Date}2026-09-22T12:10:33.855Z"
+    jcr:createdBy="admin"
+    jcr:description="\0"
+    jcr:lastModified="{Date}2026-09-22T12:10:33.855Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="3"
+    builtWith="Adobe Experience Manager-2026.6.26773.20260622T092054Z"
+    group="my_packages"
+    lastUnwrapped="{Date}2026-09-22T12:10:33.855Z"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2026-09-22T12:10:33.855Z"
+    lastWrappedBy="admin"
+    name="content_of_out_with_the_nest"
+    version="v1">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/content/outwiththenest"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/content/dam/outwiththenest"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/content/experience-fragments/outwiththenest"
+            rules="[]"/>
+    </filter>
+</jcr:root>

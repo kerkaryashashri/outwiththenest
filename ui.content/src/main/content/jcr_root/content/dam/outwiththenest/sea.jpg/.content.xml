@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="6679596e-1476-4f28-8cee-f7c6d0069053">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2026-09-20T19:05:39.704+01:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:extracted="{Date}2026-09-20T19:05:38.730+01:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}300"
+            dam:Physicalheightininches="{Decimal}1.2000000476837158"
+            dam:Physicalwidthindpi="{Long}300"
+            dam:Physicalwidthininches="{Decimal}2.1433334350585938"
+            dam:Progressive="no"
+            dam:sha1="5313115160580849e72b8cee563da0b6c810f024"
+            dam:size="{Long}51093"
+            dc:format="image/jpeg"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}360"
+            tiff:ImageWidth="{Long}643"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="300/1"
+            tiff:YCbCrPositioning="{Long}1"
+            tiff:YResolution="300/1"
+            xmp:CreatorTool="Adobe Stock Platform"
+            xmpMM:DocumentID="xmp.iid:e1a43bf0-7fa0-4f75-9f4f-ee3777aa1cf8"
+            xmpMM:InstanceID="adobe:docid:stock:b43a979a-4386-4cca-9cf6-17096eb2776d"
+            xmpMM:OriginalDocumentID="adobe:docid:stock:1009704358"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

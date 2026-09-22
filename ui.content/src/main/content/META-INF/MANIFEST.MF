@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Content-Package-Id: my_packages:content_of_out_with_the_nest:v1
+Content-Package-Roots: /content/dam/outwiththenest,/content/outwiththene
+ st,/content/experience-fragments/outwiththenest
+Content-Package-Type: content
+

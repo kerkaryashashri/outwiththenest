@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2026-09-17T18:42:01.192+01:00"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/outwiththenest/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -16,11 +18,16 @@
             <separator
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="outwiththenest/components/separator"/>
-            <text
+            <footer
+                jcr:created="{Date}2026-09-17T18:40:29.105+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2026-09-17T18:42:01.082+01:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/text"
-                text="&lt;p>Copyright 2026, Out With The Nest.&amp;nbsp;All rights reserved.&lt;/p>&#xd;&#xa;&lt;p>345 Park Avenue,&amp;nbsp;San Jose, CA 95110-2704, USA&lt;/p>&#xd;&#xa;"
-                textIsRich="true"/>
+                sling:resourceType="outwiththenest/components/footer"
+                copyrightText="© 2026 Out With The Nest. All rights reserved @ Yashashri Kerkar"
+                description="Little adventures. Lovely family memories."
+                homeUrl="/content/outwiththenest/gb/en/home.html"/>
         </root>
     </jcr:content>
 </jcr:root>

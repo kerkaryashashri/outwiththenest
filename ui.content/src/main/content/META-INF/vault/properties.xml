@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="description"></entry>
+<entry key="generator">org.apache.jackrabbit.vault:4.2.0</entry>
+<entry key="packageType">content</entry>
+<entry key="lastWrappedBy">admin</entry>
+<entry key="packageFormatVersion">2</entry>
+<entry key="group">my_packages</entry>
+<entry key="created">2026-09-22T12:10:33.873Z</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="buildCount">3</entry>
+<entry key="lastWrapped">2026-09-22T12:10:33.855Z</entry>
+<entry key="version">v1</entry>
+<entry key="dependencies"></entry>
+<entry key="createdBy">admin</entry>
+<entry key="name">content_of_out_with_the_nest</entry>
+<entry key="lastModified">2026-09-22T12:10:33.855Z</entry>
+</properties>

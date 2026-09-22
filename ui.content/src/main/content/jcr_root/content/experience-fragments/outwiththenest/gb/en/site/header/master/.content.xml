@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2026-09-17T19:01:01.325+01:00"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/outwiththenest/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -13,22 +15,36 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="outwiththenest/components/container"
             layout="simple">
-            <navigation
+            <header
+                jcr:created="{Date}2026-09-17T15:13:48.880+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2026-09-17T19:00:09.652+01:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/navigation"
-                collectAllPages="false"
-                navigationRoot="/content/outwiththenest/gb/en"
-                skipNavigationRoot="false"
-                structureDepth="1"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/languagenavigation"
-                navigationRoot="/content/outwiththenest/gb"
-                structureDepth="2"/>
-            <search
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/search"
-                searchRoot="/content/outwiththenest/gb"/>
+                sling:resourceType="outwiththenest/components/header"
+                brandName="Out With The Nest"
+                homeUrl="/content/outwiththenest/gb/en/home.html"
+                logo="/content/dam/outwiththenest/logo.png"
+                showLanguage="true">
+                <navigation
+                    jcr:lastModified="{Date}2026-09-17T15:24:56.816+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="outwiththenest/components/navigation"
+                    collectAllPages="true"
+                    disableShadowing="false"
+                    navigationRoot="/content/outwiththenest/gb/en"
+                    structureStart="1"/>
+                <language
+                    jcr:lastModified="{Date}2026-09-17T19:01:01.146+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="outwiththenest/components/languagenavigation"
+                    accessibilityLabel="Languages"
+                    navigationRoot="/content/outwiththenest/gb"
+                    structureDepth="1"/>
+            </header>
+            <logo/>
         </root>
     </jcr:content>
 </jcr:root>
