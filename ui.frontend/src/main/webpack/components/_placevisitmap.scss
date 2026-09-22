@@ -1,0 +1,172 @@
+.cmp-place-visit-map {
+    padding: 0 24px 72px;
+    background: #fffaf3;
+    color: #102544;
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 48px;
+        align-items: stretch;
+
+        max-width: 1068px;
+        margin: 0 auto;
+        padding: 44px;
+
+        border-radius: 28px;
+        background: #eaf6ff;
+        box-shadow: 0 14px 34px rgba(16, 37, 68, 0.08);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    &__eyebrow {
+        margin: 0 0 12px;
+        color: #496889;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        margin: 0 0 22px;
+        color: #102544;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2rem, 3.2vw, 3rem);
+        line-height: 1.1;
+    }
+
+    &__address,
+    &__note {
+        margin: 0;
+        color: #315172;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    &__address {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 16px;
+        color: #102544;
+        font-weight: 700;
+    }
+
+    &__resolved-location {
+        margin: -6px 0 16px 30px;
+        color: #496889;
+        font: 600 13px / 1.45 "Segoe UI", Arial, sans-serif;
+    }
+    &__pin {
+        position: relative;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        flex: 0 0 18px;
+        margin-top: 4px;
+
+        border: 2px solid #102544;
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(-45deg);
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #ffb300;
+        }
+    }
+
+    &__directions {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 28px;
+        padding: 13px 20px;
+
+        border-radius: 999px;
+        background: #ffb300;
+        color: #102544;
+        font: 700 16px / 1.2 "Segoe UI", Arial, sans-serif;
+        text-decoration: none;
+
+        transition: background-color 160ms ease, transform 160ms ease;
+
+        &:hover {
+            background: #ffc333;
+            color: #102544;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        &:focus-visible {
+            outline: 3px solid #102544;
+            outline-offset: 4px;
+        }
+    }
+
+    &__map {
+        min-height: 340px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        background: #dceaf5;
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 340px;
+            border: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 0 16px 48px;
+
+        &__inner {
+            grid-template-columns: 1fr;
+            gap: 28px;
+            padding: 28px 24px;
+            border-radius: 24px;
+        }
+
+        &__heading {
+            font-size: 2rem;
+        }
+
+        &__map,
+        &__map iframe {
+            min-height: 280px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        &__directions {
+            transition: none;
+
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+}
