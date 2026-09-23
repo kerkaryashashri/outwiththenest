@@ -1,8 +1,25 @@
-<p class="cmp-placesexplore__eyebrow">${properties.eyebrow}</p>
-<h2 class="cmp-placesexplore__title">${properties.title}</h2>
 <sly data-sly-use.model="com.outwiththenest.core.models.PlacesExploreModel"/>
-<ul data-sly-list.card="${model.cards}">
-    <li>
-        <a href="${card.url}">${card.title}</a>
+<p class="cmp-placesexplore__eyebrow" data-sly-test="${properties.eyebrow}">${properties.eyebrow}</p>
+<h2 class="cmp-placesexplore__title" data-sly-test="${properties.title}">${properties.title}</h2>
+
+<ul class="cmp-placesexplore__list" data-sly-test="${model.cards.size}"
+    data-sly-list.card="${model.cards}">
+    <li class="cmp-placesexplore__item">
+        <a class="cmp-placesexplore__card" href="${card.url}">
+            <div class="cmp-placesexplore__image" data-sly-test="${card.image}">
+                <img src="${card.image}" alt="" loading="lazy" width="640" height="400">
+            </div>
+            <div class="cmp-placesexplore__content">
+                <h3 class="cmp-placesexplore__card-title">${card.title}</h3>
+                <p class="cmp-placesexplore__description" data-sly-test="${card.description}">${card.description}</p>
+                <p class="cmp-placesexplore__location" data-sly-test="${card.location}">${card.location}</p>
+                <div class="cmp-placesexplore__tags" data-sly-test="${card.environment || card.costType}">
+                    <span class="cmp-placesexplore__tag" data-sly-test="${card.environment}">${card.environment}</span>
+                    <span class="cmp-placesexplore__tag" data-sly-test="${card.costType}">${card.costType}</span>
+                </div>
+                <p class="cmp-placesexplore__price" data-sly-test="${card.price}">${card.price}</p>
+                <span class="cmp-placesexplore__action">Explore place <span aria-hidden="true">&rarr;</span></span>
+            </div>
+        </a>
     </li>
 </ul>

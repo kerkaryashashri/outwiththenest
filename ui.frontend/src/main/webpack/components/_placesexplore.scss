@@ -1,8 +1,13 @@
 .cmp-placesexplore {
-     padding-bottom: 40px;
+    padding-bottom: 40px;
+    color: #102544;
+
+    &, * {
+        box-sizing: border-box;
+    }
 
     &__eyebrow {
-       margin: 0 0 14px;
+        margin: 0 0 14px;
         color: #4679a5;
         font-family: "Segoe UI", Arial, sans-serif;
         font-size: 11px;
@@ -17,5 +22,124 @@
         font-family: Georgia, "Times New Roman", serif;
         font-size: clamp(2rem, 3.5vw, 3rem);
         line-height: 1.1;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        margin: 28px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        min-width: 0;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid #d3e1ed;
+        border-radius: 20px;
+        background: #eaf4fb;
+        color: #102544;
+        text-decoration: none;
+        box-shadow: 0 6px 18px rgba(16, 37, 68, 0.08);
+
+        &:hover {
+            color: #102544;
+            text-decoration: none;
+            box-shadow: 0 10px 24px rgba(16, 37, 68, 0.16);
+        }
+
+        &:focus-visible {
+            outline: 3px solid #102544;
+            outline-offset: 4px;
+        }
+    }
+
+    &__image {
+        aspect-ratio: 8 / 5;
+        background: #d9eaf7;
+        height: 200px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 24px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        overflow-wrap: anywhere;
+    }
+
+    &__card-title {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    &__description, &__location {
+        margin: 0;
+        color: #405b78;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    &__tag {
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #fff0cc;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    &__price {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin-top: auto;
+        padding-top: 12px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+        &__list {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 640px) {
+        &__list {
+            grid-template-columns: minmax(0, 1fr);
+        }
     }
 }
