@@ -1,75 +1,60 @@
-# Cypress Sample Test Module
+# Run the Cypress Tests
 
-This module documents the recommended structure for a Cypress test module and adheres to the Cloud Manager UI test module conventions,
-ensuring that tests will be executed and reports generated are stored in the proper location.
+These are basic AEM tests included with the project setup. They do not yet test the custom Out With The Nest pages or components.
 
-Some examples of basic tasks like logging in-out of AEM instances, taking screenshots, logging browser requests are included.
+## What the tests check
 
+* `login.cy.js` checks the author login page and signing in.
+* `basic.cy.js` checks that the author Solutions panel opens.
+* `console_error.cy.js` checks for browser console errors at the publish URL.
+* `assets.cy.js` contains an asset upload example. It is skipped by default.
 
+## Local setup
 
+Install Node.js and npm, then start AEM author on port `4502` and publish on port `4503`.
 
-- Install Cypress
-  ```shell
-  npm install
-  ```
+From the repository root, open PowerShell and run:
 
-- Set environment variables required for test execution
-  ```shell
-  export AEM_AUTHOR_URL=https://author-p***-e***.adobeaemcloud.com
-  export AEM_AUTHOR_USERNAME=admin
-  export AEM_AUTHOR_PASSWORD=***
-  export AEM_PUBLISH_URL=https://publish-p***-e***.adobeaemcloud.com
-  export AEM_PUBLISH_USERNAME=admin
-  export AEM_PUBLISH_PASSWORD=***
-  export REPORTS_PATH=target/
-  ```
-
-- Run tests with one of the following commands
-  ```shell
-  npm test              # Using default Cypress browser
-  npm run test-chrome   # Using Google Chrome browser
-  npm run test-firefox  # Using Firefox browser
-  ```
-
-- For debugging tests, you may run Cypress with the browser visible and Cypress console
-  ```shell
-  npx cypress run --headed --no-exit --browser chrome
-  ```
-
-
-In order to be able to interpret the results of the tests correctly, a summary in JUnit format needs to be
-provided. To achieve this, both the `spec` and `mocha-junit-reporter` reporter are configured:
-
-```javascript
-reporter: 'cypress-multi-reporters',
-reporterOptions: {
-  configFile: 'reporter.config.js',
-},
+```powershell
+cd ui.tests/test-module
+npm install
 ```
 
-```javascript
-const reportsPath = process.env.REPORTS_PATH || 'cypress/results'
+The default URLs are `http://localhost:4502` and `http://localhost:4503`. Both use `admin/admin` by default.
 
-module.exports = {
-  "reporterEnabled": "spec, mocha-junit-reporter",
-  "mochaJunitReporterReporterOptions": {
-    "mochaFile": `${reportsPath}/output.xml`
-  },
-}
+If your setup is different, set the values in the same PowerShell window before running the tests. For example:
+
+```powershell
+$env:AEM_AUTHOR_URL = "http://localhost:4502"
+$env:AEM_PUBLISH_URL = "http://localhost:4503"
+$env:AEM_AUTHOR_USERNAME = "admin"
+$env:AEM_AUTHOR_PASSWORD = "admin"
+$env:AEM_PUBLISH_USERNAME = "admin"
+$env:AEM_PUBLISH_PASSWORD = "admin"
 ```
 
-In order for the report to be found `reportPath` must be the value passed in the environment
-variable `REPORTS_PATH` as expected by EaaS. See [cypress.config.js](cypress.config.js)
+Use your own local credentials if they differ. Keep passwords out of committed files.
 
+## Run tests
 
-Cypress will automatically record videos for all test executions and create screenshots for test failures.
+From `ui.tests/test-module`, run:
 
-Additional screenshots can be captured during the test execution using following command:
-
-```javascript
-cy.screenshot()
+```sh
+npm test
 ```
 
-`$REPORTS_PATH/videos` will contain the videos.
+This runs the tests in Electron. To use an installed Chrome or Firefox browser, run `npm run test-chrome` or `npm run test-firefox`.
 
-`$REPORTS_PATH/screenshots` will contain the images.
+To open Cypress and select a test interactively:
+
+```sh
+npx cypress open
+```
+
+## Results
+
+Results appear in the terminal. JUnit XML reports are saved as `output.[hash].xml` in `cypress/results`. The hash gives each report a separate filename.
+
+Screenshots are saved under the reports folder in `screenshots`. A video folder is configured, but recording is not explicitly enabled in this project.
+
+To use a different reports folder, set `$env:REPORTS_PATH` before running the tests. The settings are in [cypress.config.js](cypress.config.js) and [reporter.config.js](reporter.config.js).

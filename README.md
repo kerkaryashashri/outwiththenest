@@ -1,25 +1,108 @@
-# Out With The Nest
+# Out With The Nest - Project Owner Yashashri Kerkar
+
+**Out With The Nest** is a family activity discovery platform designed to help parents easily find ideas for days out, activities, events, and experiences for children.
+
+## Why I Built This
+
+The idea for this project came from my own experience as a parent.
+
+While speaking with other parents, I realised that we often search for the same types of information: places to visit with children, weekend activities, parks, museums, swimming, birthday venues, indoor and outdoor activities, and local events.
+
+Sometimes families want to plan a special paid experience, while at other times they simply want to spend time together without spending any money.
+
+I wanted to bring these ideas together into one simple and easy-to-use platform.
+
+## Project Goals
+
+The project is designed to:
+
+* Help parents discover family-friendly activities easily
+* Support both free and paid activity discovery
+* Organise activities by categories such as indoor, outdoor, events, parks, swimming and birthday venues
+* Provide reusable and scalable content structures
+* Create a responsive and user-friendly experience
+* Demonstrate practical Adobe Experience Manager architecture and development
+
+## Technology Stack
+
+* Adobe Experience Manager as a Cloud Service
+* Apache Sling
+* Sling Models
+* HTL
+* OSGi
+* Java
+* HTML
+* SCSS / CSS
+* JavaScript
+* Maven
+* Git / GitHub
+
+## Architecture Approach
+
+The project follows a modular AEM architecture where presentation, content and backend logic are separated wherever possible.
+
+The goal is to create components that can be reused across different sections of the website while keeping authoring simple for content editors.
+
+## Implemented Features
+
+* Custom header and navigation
+* Homepage hero and category sections
+* Reusable activity cards
+* Parks and walks listing page
+* Activity detail pages
+* Editable templates and content policies
+* Place map with third-party postcode API integration
+* Header and footer Experience Fragments.
+
+## Future Enhancements
+
+* Location-based activity discovery
+* Free and paid activity filters
+* Indoor and outdoor filters
+* Age-based filtering
+* Weekend event listings
+* Search functionality
+* Personalised recommendations
+
+## Purpose of This Repository
+
+Along with building a useful platform for parents, this project is also a practical implementation of my experience with Adobe Experience Manager.
+
+It allows me to explore solution architecture, reusable component development, content modelling, performance considerations and modern AEM development practices through a real-world use case.
 
 Complete AEM site source with authored pages, editable templates and policies,
 Experience Fragments, and DAM originals/renditions. Follow [SETUP.md](SETUP.md)
 to restore the site on a fresh AEM author and export future author changes to Git.
 
+## Screenshots
+
+### Homepage
+
+![Out With The Nest homepage](docs/HomeScreenshot.png)
+
+### Park and Walks page
+
+![Out With The Nest parks and walks page](docs/ParkandWalksPage.png)
+
+
 ## Modules
 
-The main parts of the template are:
+The project contains these modules:
 
-* [core:](core/README.md) Java bundle containing all core functionality like OSGi services, listeners or schedulers, as well as component-related Java code such as servlets or request filters.
-* [it.tests:](it.tests/README.md) Java based integration tests
-* [ui.apps:](ui.apps/README.md) contains the /apps (and /etc) parts of the project, ie JS&CSS clientlibs, components, and templates
-* [ui.content:](ui.content/README.md) contains sample content using the components from the ui.apps
-* ui.config: contains runmode specific OSGi configs for the project
-* [ui.frontend:](ui.frontend.general/README.md) an optional dedicated front-end build mechanism (Angular, React or general Webpack project)
-* [ui.tests:](ui.tests/README.md) Cypress based UI tests (for other frameworks check [aem-test-samples](https://github.com/adobe/aem-test-samples) repository
-* all: a single content package that embeds all of the compiled modules (bundles and content packages) including any vendor dependencies
-* analyse: this module runs analysis on the project which provides additional validation for deploying into AEMaaCS
+* **core:** Java bundle containing Sling Models, OSGi services and servlets.
+* **it.tests:** Java integration tests.
+* **ui.apps:** AEM components and client libraries.
+* **ui.content:** Authored site content, templates and assets.
+* **ui.config:** Runmode-specific OSGi configurations.
+* **ui.frontend:** Frontend assets built using Webpack.
+* **ui.tests:** Cypress UI tests.
+* **all:** Combined deployment package.
+* **dispatcher:** Dispatcher caching and request filtering configuration.
+* **ui.apps.structure:** Repository structure required by the application package.
 
 ## How to build
 
+Use Java 21 and Maven 3 for local builds.
 To build all the modules run in the project root directory the following command with Maven 3:
 
     mvn clean install
@@ -46,7 +129,8 @@ Or to deploy only a single content package, run in the sub-module directory (i.e
 
 ## Documentation
 
-The build process also generates documentation in the form of README.md files in each module directory for easy reference. Depending on the options you select at build time, the content may be customized to your project.
+See [SETUP.md](SETUP.md) for local AEM setup, content restoration
+and export instructions.
 
 ## Testing
 
@@ -54,73 +138,52 @@ There are three levels of testing contained in the project:
 
 ### Unit tests
 
-This show-cases classic unit testing of the code contained in the bundle. To
-test, execute:
-
-    mvn clean test
+Unit tests are kept in `core/src/test/java`.
+Run them from the project root with `mvn clean test`.
 
 ### Integration tests
 
-This allows running integration tests that exercise the capabilities of AEM via
-HTTP calls to its API. To run the integration tests, run:
+The `it.tests` module contains basic AEM integration tests using AEM Testing Clients.
+`GetPageIT` checks that the author homepage and consoles respond successfully.
+`CreatePageIT` checks that a test page can be created on author; the test rule
+removes the page afterwards.
 
-    mvn clean verify -Plocal
+Start local AEM author and publish instances before running these tests.
+From the project root, run:
 
-Test classes must be saved in the `src/main/java` directory (or any of its
-subdirectories), and must be contained in files matching the pattern `*IT.java`.
+```sh
+mvn clean verify -pl it.tests -Plocal
+```
 
-The configuration provides sensible defaults for a typical local installation of
-AEM. If you want to point the integration tests to different AEM author and
-publish instances, you can use the following system properties via Maven's `-D`
-flag.
+The local profile uses author at `http://localhost:4502` and publish at
+`http://localhost:4503`, with `admin` as the default username and password.
+If your setup differs, override `it.author.url`, `it.publish.url` and the
+corresponding `it.author.user`, `it.author.password`, `it.publish.user` and
+`it.publish.password` properties using Maven's `-D` options.
 
-| Property              | Description                                         | Default value           |
-|-----------------------|-----------------------------------------------------|-------------------------|
-| `it.author.url`       | URL of the author instance                          | `http://localhost:4502` |
-| `it.author.user`      | Admin user for the author instance                  | `admin`                 |
-| `it.author.password`  | Password of the admin user for the author instance  | `admin`                 |
-| `it.publish.url`      | URL of the publish instance                         | `http://localhost:4503` |
-| `it.publish.user`     | Admin user for the publish instance                 | `admin`                 |
-| `it.publish.password` | Password of the admin user for the publish instance | `admin`                 |
-
-The integration tests in this archetype use the [AEM Testing
-Clients](https://github.com/adobe/aem-testing-clients) and showcase some
-recommended [best
-practices](https://github.com/adobe/aem-testing-clients/wiki/Best-practices) to
-be put in use when writing integration tests for AEM.
-
-## Static Analysis
-
-The `analyse` module performs static analysis on the project for deploying into AEMaaCS. It is automatically
-run when executing
-
-    mvn clean install
-
-from the project root directory. Additional information about this analysis and how to further configure it
-can be found here https://github.com/adobe/aemanalyser-maven-plugin
+Test classes are kept in `it.tests/src/main/java` and use the `*IT.java` naming pattern.
+These tests cover basic AEM operations; they do not yet cover the site's custom features.
 
 ### UI tests
 
-They will test the UI layer of your AEM application using Cypress framework.
+The `ui.tests` module contains Cypress UI tests.
+See [UI test documentation](ui.tests/README.md) for details.
 
-Check README file in `ui.tests` module for more details.
+## Static Analysis
 
-Examples of UI tests in different frameworks can be found here: https://github.com/adobe/aem-test-samples
+The `all` module uses the AEM Analyser Maven Plugin to validate
+the assembled package for AEM as a Cloud Service during the Maven build.
 
 ## ClientLibs
 
-The frontend module is made available using an [AEM ClientLib](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html). When executing the NPM build script, the app is built and the [`aem-clientlib-generator`](https://github.com/wcm-io-frontend/aem-clientlib-generator) package takes the resulting build output and transforms it into such a ClientLib.
+The site's styles and scripts are kept in `ui.frontend/src/main/webpack`.
+Webpack builds these files, and `aem-clientlib-generator` copies the output into
+the client libraries under `ui.apps/src/main/content/jcr_root/apps/outwiththenest/clientlibs`.
 
-A ClientLib will consist of the following files and directories:
+`clientlib-site` contains the site CSS, JavaScript and resources. It depends on
+`clientlib-dependencies`, which holds the separate dependency bundle.
 
-- `css/`: CSS files which can be requested in the HTML
-- `css.txt` (tells AEM the order and names of files in `css/` so they can be merged)
-- `js/`: JavaScript files which can be requested in the HTML
-- `js.txt` (tells AEM the order and names of files in `js/` so they can be merged
-- `resources/`: Source maps, non-entrypoint code chunks (resulting from code splitting), static assets (e.g. icons), etc.
+To build the frontend, run `npm run prod` from the `ui.frontend` directory.
+Make styling and script changes in the frontend source files, then rebuild
+to update the generated client libraries.
 
-## Maven settings
-
-The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
-
-    http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
