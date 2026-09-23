@@ -1,0 +1,8 @@
+<p class="cmp-placesexplore__eyebrow">${properties.eyebrow}</p>
+<h2 class="cmp-placesexplore__title">${properties.title}</h2>
+<sly data-sly-use.model="com.outwiththenest.core.models.PlacesExploreModel"/>
+<ul data-sly-list.card="${model.cards}">
+    <li>
+        <a href="${card.url}">${card.title}</a>
+    </li>
+</ul>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="More Places to Explore"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+
+            <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                name="./title"
+                fieldLabel="Listing heading"
+                required="{Boolean}true"
+                value="More places to explore"/>
+
+            <eyebrow
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                name="./eyebrow"
+                fieldLabel="Heading Eyebrow"
+                required="{Boolean}true"
+                value="YOU MIGHT ALSO LIKE"/>
+
+            <places
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                fieldLabel="Places to explore">
+
+                <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                    name="./selectedPages"
+                    fieldLabel="Place page"
+                    rootPath="/content/outwiththenest"/>
+            </places>
+
+        </items>
+    </content>
+</jcr:root>
