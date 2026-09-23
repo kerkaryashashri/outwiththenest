@@ -74,6 +74,15 @@ Complete AEM site source with authored pages, editable templates and policies,
 Experience Fragments, and DAM originals/renditions. Follow [SETUP.md](SETUP.md)
 to restore the site on a fresh AEM author and export future author changes to Git.
 
+## Static website demo
+
+A standalone HTML/CSS/JavaScript preview is available in [`docs/index.html`](docs/index.html).
+It includes the homepage, a searchable Parks & Walks listing, and a Coastal Walks
+detail page using the project's AEM content and images. Open the HTML locally,
+or follow the [GitHub Pages publishing steps](docs/DEPLOY.md) to host it.
+
+To refresh the generated pages and selected assets, run `node scripts/build-demo.mjs`.
+
 ## Screenshots
 
 ### Homepage
@@ -186,4 +195,3 @@ the client libraries under `ui.apps/src/main/content/jcr_root/apps/outwiththenes
 To build the frontend, run `npm run prod` from the `ui.frontend` directory.
 Make styling and script changes in the frontend source files, then rebuild
 to update the generated client libraries.
-
