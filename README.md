@@ -1,5 +1,10 @@
 # Out With The Nest - Project Owner Yashashri Kerkar
 
+🌐 [View Live Demo](https://kerkaryashashri.github.io/outwiththenest/)
+
+A static preview of the AEM website, featuring the homepage,
+Parks & Walks listing, and Coastal Walks detail page.
+
 **Out With The Nest** is a family activity discovery platform designed to help parents easily find ideas for days out, activities, events, and experiences for children.
 
 ## Why I Built This
