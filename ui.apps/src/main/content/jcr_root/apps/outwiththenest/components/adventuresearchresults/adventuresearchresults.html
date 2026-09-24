@@ -1,0 +1,63 @@
+<sly data-sly-use.model="com.outwiththenest.core.models.AdventureSearchResultsModel"
+     data-sly-use.cards="../discoverylisting/cards.html"/>
+<section class="cmp-adventure-results cmp-discovery-listing" aria-label="Adventure search results">
+    <div class="cmp-discovery-listing__inner">
+        <h1 class="cmp-discovery-listing__title">${properties.heading || 'Find your next little adventure'}</h1>
+        <p>Discover places to play, explore and spend time together.</p>
+        <form class="cmp-adventure-results__filters" method="get" action="${model.resultsUrl}">
+            <label class="cmp-adventure-results__query">
+                <span>Search places</span>
+                <input type="search" name="q" value="${model.query}" maxlength="120" placeholder="e.g. coastal walks">
+            </label>
+            <!-- Keep empty values literal: HTL removes empty dynamic attributes,
+                 which would make browsers submit the option label instead. -->
+            <label><span>Where?</span>
+                <select name="location">
+                    <option value="">All locations</option>
+                    <sly data-sly-list.option="${model.locationOptions}">
+                        <option data-sly-test="${option.value}" value="${option.value}" selected="${option.selected}">${option.label}</option>
+                    </sly>
+                </select>
+            </label>
+            <label><span>Age group</span>
+                <select name="ageGroup">
+                    <option value="">All ages</option>
+                    <sly data-sly-list.option="${model.ageOptions}">
+                        <option data-sly-test="${option.value}" value="${option.value}" selected="${option.selected}">${option.label}</option>
+                    </sly>
+                </select>
+            </label>
+            <label><span>Indoor or outdoor?</span>
+                <select name="environment">
+                    <option value="">Any setting</option>
+                    <sly data-sly-list.option="${model.environmentOptions}">
+                        <option data-sly-test="${option.value}" value="${option.value}" selected="${option.selected}">${option.label}</option>
+                    </sly>
+                </select>
+            </label>
+            <label><span>Cost</span>
+                <select name="costType">
+                    <option value="">Any cost</option>
+                    <sly data-sly-list.option="${model.costOptions}">
+                        <option data-sly-test="${option.value}" value="${option.value}" selected="${option.selected}">${option.label}</option>
+                    </sly>
+                </select>
+            </label>
+            <div class="cmp-adventure-results__actions">
+                <button class="cmp-button" type="submit">Find an adventure</button>
+                <a href="${model.resultsUrl}">Clear filters</a>
+            </div>
+        </form>
+        <p data-sly-test="${model.invalidFilters}" role="alert">One of the search filters is not supported. Choose from the available options or clear the filters.</p>
+        <header class="cmp-discovery-listing__header">
+            <h2>Places to explore</h2>
+            <p class="cmp-discovery-listing__count" role="status">${model.count} ${model.count == 1 ? 'place' : 'places'} to discover</p>
+        </header>
+        <sly data-sly-call="${cards.grid @ cards=model.cards}"/>
+        <div class="cmp-adventure-results__empty" data-sly-test="${!model.cards.size}">
+            <h3>No adventures found just yet</h3>
+            <p>Try a different location, age group or setting, or clear your filters to explore all places.</p>
+            <a class="cmp-button" href="${model.resultsUrl}">Show all places</a>
+        </div>
+    </div>
+</section>

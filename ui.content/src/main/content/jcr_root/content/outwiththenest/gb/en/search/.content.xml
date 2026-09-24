@@ -20,7 +20,9 @@
                     layout="responsiveGrid">
                     <searchresults
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="outwiththenest/components/commerce/searchresults"/>
+                        sling:resourceType="outwiththenest/components/adventuresearchresults"
+                        heading="Find your next little adventure"
+                        sourcePage="/content/outwiththenest/gb/en"/>
                 </container>
             </container>
         </root>
