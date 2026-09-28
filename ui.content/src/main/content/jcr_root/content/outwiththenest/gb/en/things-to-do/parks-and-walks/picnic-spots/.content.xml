@@ -1,43 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    jcr:primaryType="cq:Page">
-    <jcr:content
-        cq:lastModified="{Date}2026-09-21T17:19:11.727+01:00"
-        cq:lastModifiedBy="admin"
-        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="Picnic Spots"
-        sling:resourceType="outwiththenest/components/page"
-        ageGroup="All ages"
-        costType="Free"
-        environment="Outdoors"
-        featuredImage="/content/dam/outwiththenest/HangingBridgeBristol.jpg"
-        hideInDiscovery="false"
-        location="Clevedon"
-        pwaCachestrategy="staleWhileRevalidate"
-        pwaDisplay="standalone"
-        pwaOrientation="any">
-        <root
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="outwiththenest/components/container"
-            layout="responsiveGrid">
-            <container
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/container"
-                layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/title"/>
-                <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/container"
-                    layout="responsiveGrid"/>
-            </container>
-        </root>
-        <cq:featuredimage
-            jcr:lastModified="{Date}2026-09-21T17:19:11.699+01:00"
-            jcr:lastModifiedBy="admin"
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="core/wcm/components/image/v3/image"/>
-    </jcr:content>
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:lastModified="{Date}2026-09-21T17:19:11.727+01:00" cq:lastModifiedBy="admin" cq:template="/conf/outwiththenest/settings/wcm/templates/category-page" jcr:primaryType="cq:PageContent" jcr:title="Picnic Spots" sling:resourceType="outwiththenest/components/page" ageGroup="All ages" environment="Outdoors" featuredImage="/content/dam/outwiththenest/venues/ashton-court-estate.jpg" hideInDiscovery="false" pwaCachestrategy="staleWhileRevalidate" pwaDisplay="standalone" pwaOrientation="any" shortDescription="Find six places to share a picnic, from city lawns to open parkland and a lakeside setting.">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <compactcategoryhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/compactcategoryhero" jcr:title="Picnic Spots" jcr:description="&lt;p&gt;Find six places to share a picnic, from city lawns to open parkland and a lakeside setting.&lt;/p&gt;" pretitle="Pack a blanket and stay a while" titleFromPage="{Boolean}true" descriptionFromPage="{Boolean}false" textIsRich="{Boolean}true" titleType="h1" fileReference="/content/dam/outwiththenest/venues/ashton-court-estate.jpg" imageFromPageImage="{Boolean}false" alt="Long Ashton , Ashton Court Estate"></compactcategoryhero>
+          <sectionintro jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/sectionintro" title="Pack a blanket and stay a while" description="Find six places to share a picnic, from city lawns to open parkland and a lakeside setting."></sectionintro>
+          <subsectionlisting jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/discoverylisting" sourcePage="/content/outwiththenest/gb/en/things-to-do/parks-and-walks/picnic-spots" title="Places to explore" maxItems="0" showCount="{Boolean}true"></subsectionlisting>
+        </container>
+      </container>
+    </root>
+    <cq:featuredimage jcr:lastModified="{Date}2026-09-21T17:19:11.699+01:00" jcr:lastModifiedBy="admin" jcr:primaryType="nt:unstructured" sling:resourceType="core/wcm/components/image/v3/image" fileReference="/content/dam/outwiththenest/venues/ashton-court-estate.jpg" />
+  </jcr:content>
+  <ashton-court-picnic />
+  <lake-grounds-picnic />
+  <brandon-hill-picnic />
+  <queen-square-picnic />
+  <st-andrews-park-picnic />
+  <portishead-lake-grounds />
 </jcr:root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Brean Down Coastal Walk" jcr:description="A climb onto a Somerset headland with sea views and a historic fort." pageTitle="Brean Down Coastal Walk" shortDescription="A climb onto a Somerset headland with sea views and a historic fort." location="Somerset" environment="Outdoors" ageGroup="12+ years" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/brean-down.jpg" featuredImageAlt="BreanDown2">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="COASTAL WALKS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE SOMERSET" description="&lt;p&gt;Brean Down is a substantial coastal adventure rather than a flat seafront stroll. The headland reaches into the Bristol Channel, and its fort and open landscape give older children a destination to work towards.&lt;/p&gt;&lt;p&gt;Plan from the National Trust trail guide, taking account of the climb and your family's walking experience. Our family idea: bring binoculars and use a sheltered stop to compare the coast on either side of the Down.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Older children and experienced family walkers." facilities="Visitor facilities at the base of the Down; little shelter on the headland." parking="Use the signed Brean Down parking area and check current charges." goodToKnow="Expect steep steps or an uphill approach, exposed weather and dangerous cliffs. Keep children well back from edges and avoid tidal mud on the beach.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Brean Down, Brean, Somerset, TA8 2RS" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Brean%20Down%2C%20Brean%2C%20Somerset%2C%20TA8%202RS&amp;dir_action=navigate" travelNote="Use the signed Brean Down parking area and check current charges. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="TA8 2RS" mapEmbedUrl="https://www.google.com/maps?q=Brean%20Down%2C%20Brean%2C%20Somerset%2C%20TA8%202RS&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.nationaltrust.org.uk/visit/somerset/brean-down/brean-down-coastal-walk&quot;&gt;Visitor information for Brean Down Coastal Walk&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/coastal-walks.html&quot;&gt;Explore more coastal walks&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.nationaltrust.org.uk/visit/somerset/brean-down/brean-down-coastal-walk&quot;&gt;Visitor information for Brean Down Coastal Walk&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:BreanDown2.jpg&quot;&gt;BreanDown2&lt;/a&gt; — Adam Cli. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

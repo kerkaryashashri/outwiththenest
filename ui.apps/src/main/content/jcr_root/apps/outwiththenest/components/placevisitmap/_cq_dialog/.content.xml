@@ -32,8 +32,7 @@
                 name="./postcode"
                 fieldLabel="Postcode"
                 fieldDescription="Used by the UK Postcodes API to retrieve map coordinates."
-                required="{Boolean}true"
-                value="BS21 7QU"/>
+                required="{Boolean}true"/>
 
             <travelNote
                 jcr:primaryType="nt:unstructured"

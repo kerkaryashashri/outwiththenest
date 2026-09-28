@@ -1,0 +1,42 @@
+// The widths come from the editable template's native AEM responsive grid.
+// Keep presentation scoped so standalone About/Practical components still work.
+.cmp-container--place-details {
+  padding-top: 48px;
+  padding-bottom: 56px;
+
+  .cmp-place-about, .cmp-place-practical-info { padding: 0; }
+  > .cmp-container > .aem-Grid > .cmp-place-about,
+  > .cmp-container > .aem-Grid > .cmp-place-practical-info { padding: 0 20px; }
+  .cmp-place-about__inner, .cmp-place-about__content { max-width: none; }
+  .cmp-place-about__heading, .cmp-place-practical-info__heading {
+    font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+  .cmp-place-about__description { font-size: 1.1rem; }
+  .cmp-place-practical-info__inner { padding: 32px; }
+  .cmp-place-practical-info__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+
+  @media (max-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    > .cmp-container > .aem-Grid > .cmp-place-practical-info { margin-top: 28px; }
+    .cmp-place-practical-info__inner { padding: 24px 20px; }
+  }
+}
+
+.cmp-container--home-featured {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .cmp-place-card__link { width: 100%; min-width: 0; }
+  .placecard.aem-GridColumn { clear: none; width: calc(100% / 3); margin-left: 0; padding: 0 12px 24px; }
+  @media (max-width: 768px) {
+    body.page & .aem-Grid.aem-Grid--10 > .placecard.aem-GridColumn { width: 100%; }
+  }
+}
+
+.cmp-container--category-body > .cmp-container > .aem-Grid > .text {
+  padding: 8px 24px;
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}

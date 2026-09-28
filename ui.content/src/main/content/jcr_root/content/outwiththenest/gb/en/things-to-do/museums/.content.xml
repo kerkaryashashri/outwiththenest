@@ -1,29 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    jcr:primaryType="cq:Page">
-    <jcr:content
-        cq:lastModified="{Date}2026-09-21T10:30:59.840+01:00"
-        cq:lastModifiedBy="admin"
-        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="Museums"
-        sling:resourceType="outwiththenest/components/page">
-        <root
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="outwiththenest/components/container"
-            layout="responsiveGrid">
-            <container
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/container"
-                layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/title"/>
-                <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/container"
-                    layout="responsiveGrid"/>
-            </container>
-        </root>
-    </jcr:content>
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/category-page" sling:resourceType="outwiththenest/components/page" jcr:title="Museums" jcr:description="Explore local stories, historic houses and remarkable aircraft at family-friendly museums." shortDescription="Explore local stories, historic houses and remarkable aircraft at family-friendly museums." hideInDiscovery="{Boolean}true" featuredImage="/content/dam/outwiththenest/venues/bristol-museum-art-gallery.jpg">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <compactcategoryhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/compactcategoryhero" jcr:title="Museums" jcr:description="&lt;p&gt;Explore local stories, historic houses and remarkable aircraft at family-friendly museums.&lt;/p&gt;" pretitle="Big discoveries for curious minds" titleFromPage="{Boolean}true" descriptionFromPage="{Boolean}false" textIsRich="{Boolean}true" titleType="h1" fileReference="/content/dam/outwiththenest/venues/bristol-museum-art-gallery.jpg" imageFromPageImage="{Boolean}false" alt="Bristol City Museum and Art Gallery (3827291297)"></compactcategoryhero>
+          <sectionintro jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/sectionintro" title="Big discoveries for curious minds" description="Explore local stories, historic houses and remarkable aircraft at family-friendly museums."></sectionintro>
+          <discoverylisting jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/discoverylisting" sourcePage="/content/outwiththenest/gb/en/things-to-do/museums" title="Places to explore" maxItems="0" showCount="{Boolean}true"></discoverylisting>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+  <bristol-museum-art-gallery />
+  <m-shed />
+  <blaise-museum />
+  <red-lodge-museum />
+  <aerospace-bristol />
 </jcr:root>

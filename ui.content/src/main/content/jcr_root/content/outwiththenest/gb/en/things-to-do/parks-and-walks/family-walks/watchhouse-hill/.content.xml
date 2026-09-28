@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Watchhouse Hill, Pill" jcr:description="A local green-space walk on the eastern edge of Pill." pageTitle="Watchhouse Hill, Pill" shortDescription="A local green-space walk on the eastern edge of Pill." location="North Somerset" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/watchhouse-hill.jpg" featuredImageAlt="Watchhouse Hill">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="FAMILY WALKS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE NORTH SOMERSET" description="&lt;p&gt;Watchhouse Hill is a public open space where a short walk can become a relaxed family outing. Its position beside the village makes it a useful choice when you want fresh air without planning a major expedition.&lt;/p&gt;&lt;p&gt;Our family idea: take a slow circuit suited to your group and pause to compare leaf shapes or cloud patterns. Keep the route flexible so younger children can spend time looking rather than keeping up.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Local families looking for an unhurried green-space walk." facilities="Public open space and paths; bring refreshments and plan toilet stops in advance." parking="Choose a suitable village arrival point and observe local parking restrictions." goodToKnow="Expect gradients and weather-dependent ground conditions. Follow site signs and check current access information before bringing a buggy.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Watchhouse Hill, The Green, Pill, BS20 0HN" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Watchhouse%20Hill%2C%20The%20Green%2C%20Pill%2C%20BS20%200HN&amp;dir_action=navigate" travelNote="Choose a suitable village arrival point and observe local parking restrictions. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS20 0HN" mapEmbedUrl="https://www.google.com/maps?q=Watchhouse%20Hill%2C%20The%20Green%2C%20Pill%2C%20BS20%200HN&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/parks-countryside/parks-open-spaces/green-flag-parks&quot;&gt;Visitor information for Watchhouse Hill, Pill&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/family-walks.html&quot;&gt;Explore more family walks&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/parks-countryside/parks-open-spaces/green-flag-parks&quot;&gt;Visitor information for Watchhouse Hill, Pill&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Watchhouse_Hill_-_geograph.org.uk_-_4514131.jpg&quot;&gt;Watchhouse Hill&lt;/a&gt; — Derek Harper. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.0&quot;&gt;CC BY-SA 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

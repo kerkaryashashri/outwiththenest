@@ -1,53 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    jcr:primaryType="cq:Page">
-    <outwiththenest jcr:primaryType="nt:unstructured">
-        <components jcr:primaryType="nt:unstructured">
-            <container jcr:primaryType="nt:unstructured">
-                <content
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Out With The Nest Content"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Out With The Nest - Content,group:Out With The Nest - Structure,group:Out With The Nest - Form]"
-                    layout="responsiveGrid"/>
-                <main
-                    cq:styleDefaultElement="main"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Nest main"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Out With The Nest - Content,group:Out With The Nest - Structure,group:Out With The Nest - Form]"
-                    layout="responsiveGrid"/>
-                <policy_27528095247200
-                    jcr:lastModified="{Date}2026-09-22T16:50:20.816+01:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Responsive Container "
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    layout="responsiveGrid"
-                    layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_27528095247200>
-            </container>
-            <page jcr:primaryType="nt:unstructured">
-                <site
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Out With The Nest Site"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[outwiththenest.base]"
-                    clientlibsJsHead="[outwiththenest.dependencies]"/>
-            </page>
-            <experiencefragment jcr:primaryType="nt:unstructured">
-                <header
-                    cq:styleDefaultElement="header"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Nest header"
-                    sling:resourceType="wcm/core/components/policy/policy"/>
-                <footer
-                    cq:styleDefaultElement="footer"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Nest footer"
-                    sling:resourceType="wcm/core/components/policy/policy"/>
-            </experiencefragment>
-        </components>
-    </outwiththenest>
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <outwiththenest jcr:primaryType="nt:unstructured">
+    <components jcr:primaryType="nt:unstructured">
+      <container jcr:primaryType="nt:unstructured">
+        <content jcr:primaryType="nt:unstructured" jcr:title="Out With The Nest Content" sling:resourceType="wcm/core/components/policy/policy" components="[group:Out With The Nest - Content,group:Out With The Nest - Structure,group:Out With The Nest - Form]" layout="responsiveGrid" />
+        <main cq:styleDefaultElement="main" jcr:primaryType="nt:unstructured" jcr:title="Nest main" sling:resourceType="wcm/core/components/policy/policy" components="[group:Out With The Nest - Content,group:Out With The Nest - Structure,group:Out With The Nest - Form]" layout="responsiveGrid" />
+        <policy_27528095247200 jcr:lastModified="{Date}2026-09-22T16:50:20.816+01:00" jcr:lastModifiedBy="admin" jcr:primaryType="nt:unstructured" jcr:title="Responsive Container " sling:resourceType="wcm/core/components/policy/policy" layout="responsiveGrid" layoutDisabled="false">
+          <jcr:content jcr:primaryType="nt:unstructured" />
+        </policy_27528095247200>
+        <page-shell jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Page shell" components="[]" layout="responsiveGrid" layoutDisabled="{Boolean}true"></page-shell>
+        <page-main jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Page main" components="[]" layout="responsiveGrid" layoutDisabled="{Boolean}true" cq:styleDefaultElement="main"></page-main>
+        <place-body jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Place page sections" components="[]" layout="responsiveGrid" layoutDisabled="{Boolean}true"></place-body>
+        <place-details jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Place details: 5 + 5 columns" components="[]" layout="responsiveGrid" layoutDisabled="{Boolean}true" cq:styleDefaultClasses="cmp-container--place-details"></place-details>
+        <home-body jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Home page sections" components="[/apps/outwiththenest/components/herocarousel,/apps/outwiththenest/components/adventurefinder,/apps/outwiththenest/components/categorytiles,/apps/outwiththenest/components/container,/apps/outwiththenest/components/discoverylisting,/apps/outwiththenest/components/sectionintro,/apps/outwiththenest/components/promobanner]" layout="responsiveGrid" layoutDisabled="{Boolean}true"></home-body>
+        <home-featured jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Home featured places" components="[/apps/outwiththenest/components/title,/apps/outwiththenest/components/placecard,/apps/outwiththenest/components/discoverylisting]" layout="responsiveGrid" layoutDisabled="{Boolean}true" cq:styleDefaultClasses="cmp-container--home-featured"></home-featured>
+        <category-body jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Category page sections" components="[/apps/outwiththenest/components/breadcrumb,/apps/outwiththenest/components/compactcategoryhero,/apps/outwiththenest/components/sectionintro,/apps/outwiththenest/components/discoverylisting,/apps/outwiththenest/components/promobanner,/apps/outwiththenest/components/text,/apps/outwiththenest/components/placeabout,/apps/outwiththenest/components/container]" layout="responsiveGrid" layoutDisabled="{Boolean}true" cq:styleDefaultClasses="cmp-container--category-body"></category-body>
+      </container>
+      <page jcr:primaryType="nt:unstructured">
+        <site jcr:primaryType="nt:unstructured" jcr:title="Out With The Nest Site" sling:resourceType="wcm/core/components/policy/policy" clientlibs="[outwiththenest.base]" clientlibsJsHead="[outwiththenest.dependencies]" />
+      </page>
+      <experiencefragment jcr:primaryType="nt:unstructured">
+        <header cq:styleDefaultElement="header" jcr:primaryType="nt:unstructured" jcr:title="Nest header" sling:resourceType="wcm/core/components/policy/policy" />
+        <footer cq:styleDefaultElement="footer" jcr:primaryType="nt:unstructured" jcr:title="Nest footer" sling:resourceType="wcm/core/components/policy/policy" />
+      </experiencefragment>
+      <compactcategoryhero jcr:primaryType="nt:unstructured">
+        <page-heading jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Category hero heading" titleType="h1" allowedHeadingElements="[h1]" showTitleType="{Boolean}false" />
+      </compactcategoryhero>
+      <hero jcr:primaryType="nt:unstructured">
+        <carousel-heading jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Home hero headings" titleType="h2" allowedHeadingElements="[h1,h2]" showTitleType="{Boolean}true" />
+      </hero>
+      <herocarousel jcr:primaryType="nt:unstructured">
+        <slides jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policy/policy" jcr:title="Home carousel slides" components="[/apps/outwiththenest/components/hero]" />
+      </herocarousel>
+    </components>
+  </outwiththenest>
 </jcr:root>

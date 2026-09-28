@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Bristol Museum &amp; Art Gallery" jcr:description="Natural history, archaeology and art for a day of discoveries on Queens Road." pageTitle="Bristol Museum &amp; Art Gallery" shortDescription="Natural history, archaeology and art for a day of discoveries on Queens Road." location="Bristol" environment="Indoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/bristol-museum-art-gallery.jpg" featuredImageAlt="Bristol City Museum and Art Gallery (3827291297)">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="MUSEUMS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;Bristol Museum &amp;amp; Art Gallery lets a family visit follow the children's interests, from animals and fossils to paintings and objects from the past. Pick a few galleries and leave room to return another day.&lt;/p&gt;&lt;p&gt;Our family idea: each person chooses one object to show the others. Ask what they notice first and what they would like to find out, then swap roles in the next gallery.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Curious children and families with different interests." facilities="Museum galleries and visitor facilities; consult the access guide for your needs." parking="Plan for city-centre public parking or arrive by bus; allow time to walk to Queens Road." goodToKnow="General admission is free. Special exhibitions and events may need a separate ticket; check the current programme.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Bristol Museum &amp; Art Gallery, Queens Road, Bristol, BS8 1RL" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Bristol%20Museum%20%26%20Art%20Gallery%2C%20Queens%20Road%2C%20Bristol%2C%20BS8%201RL&amp;dir_action=navigate" travelNote="Plan for city-centre public parking or arrive by bus; allow time to walk to Queens Road. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS8 1RL" mapEmbedUrl="https://www.google.com/maps?q=Bristol%20Museum%20%26%20Art%20Gallery%2C%20Queens%20Road%2C%20Bristol%2C%20BS8%201RL&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.bristolmuseums.org.uk/bristol-museum-and-art-gallery/&quot;&gt;Official visitor information for Bristol Museum &amp;amp; Art Gallery&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/museums.html&quot;&gt;Explore more museums&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.bristolmuseums.org.uk/bristol-museum-and-art-gallery/&quot;&gt;Official visitor information for Bristol Museum &amp;amp; Art Gallery&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Bristol_City_Museum_and_Art_Gallery_(3827291297).jpg&quot;&gt;Bristol City Museum and Art Gallery (3827291297)&lt;/a&gt; — Elliott Brown from Birmingham, United Kingdom. &lt;a href=&quot;https://creativecommons.org/licenses/by/2.0&quot;&gt;CC BY 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

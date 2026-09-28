@@ -1,43 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    jcr:primaryType="cq:Page">
-    <jcr:content
-        cq:lastModified="{Date}2026-09-21T17:17:30.982+01:00"
-        cq:lastModifiedBy="admin"
-        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="Woodland Trails"
-        sling:resourceType="outwiththenest/components/page"
-        ageGroup="All ages"
-        costType="Free"
-        environment="Outdoors"
-        featuredImage="/content/dam/outwiththenest/HangingBridgeBristol.jpg"
-        hideInDiscovery="false"
-        location="Clevedon"
-        pwaCachestrategy="staleWhileRevalidate"
-        pwaDisplay="standalone"
-        pwaOrientation="any">
-        <root
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="outwiththenest/components/container"
-            layout="responsiveGrid">
-            <container
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/container"
-                layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/title"/>
-                <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/container"
-                    layout="responsiveGrid"/>
-            </container>
-        </root>
-        <cq:featuredimage
-            jcr:lastModified="{Date}2026-09-21T17:17:30.957+01:00"
-            jcr:lastModifiedBy="admin"
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="core/wcm/components/image/v3/image"/>
-    </jcr:content>
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:lastModified="{Date}2026-09-21T17:17:30.982+01:00" cq:lastModifiedBy="admin" cq:template="/conf/outwiththenest/settings/wcm/templates/category-page" jcr:primaryType="cq:PageContent" jcr:title="Woodland Trails" sling:resourceType="outwiththenest/components/page" ageGroup="All ages" environment="Outdoors" featuredImage="/content/dam/outwiththenest/venues/leigh-woods.jpg" hideInDiscovery="false" pwaCachestrategy="staleWhileRevalidate" pwaDisplay="standalone" pwaOrientation="any" shortDescription="Discover six woodland walks around Bristol and North Somerset, with leafy paths, birdsong and room to slow down.">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <compactcategoryhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/compactcategoryhero" jcr:title="Woodland Trails" jcr:description="&lt;p&gt;Discover six woodland walks around Bristol and North Somerset, with leafy paths, birdsong and room to slow down.&lt;/p&gt;" pretitle="Follow a path beneath the trees" titleFromPage="{Boolean}true" descriptionFromPage="{Boolean}false" textIsRich="{Boolean}true" titleType="h1" fileReference="/content/dam/outwiththenest/venues/leigh-woods.jpg" imageFromPageImage="{Boolean}false" alt="Leigh Woods National Nature Reserve"></compactcategoryhero>
+          <sectionintro jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/sectionintro" title="Follow a path beneath the trees" description="Discover six woodland walks around Bristol and North Somerset, with leafy paths, birdsong and room to slow down."></sectionintro>
+          <subsectionlisting jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/discoverylisting" sourcePage="/content/outwiththenest/gb/en/things-to-do/parks-and-walks/woodland-trails" title="Places to explore" maxItems="0" showCount="{Boolean}true"></subsectionlisting>
+        </container>
+      </container>
+    </root>
+    <cq:featuredimage jcr:lastModified="{Date}2026-09-21T17:17:30.957+01:00" jcr:lastModifiedBy="admin" jcr:primaryType="nt:unstructured" sling:resourceType="core/wcm/components/image/v3/image" fileReference="/content/dam/outwiththenest/venues/leigh-woods.jpg" />
+  </jcr:content>
+  <leigh-woods />
+  <priors-wood />
+  <goblin-combe />
+  <weston-big-wood />
+  <east-wood />
+  <blaise-castle-estate />
 </jcr:root>

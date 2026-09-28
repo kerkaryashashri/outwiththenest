@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="AirHop Bristol" jcr:description="An energetic indoor trampoline outing with sessions for different ages." pageTitle="AirHop Bristol" shortDescription="An energetic indoor trampoline outing with sessions for different ages." location="Bristol" environment="Indoors" ageGroup="All ages" costType="Paid" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/airhop-bristol.png" featuredImageAlt="Trampoline courts at AirHop Bristol">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="INDOOR ACTIVITIES"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;AirHop Bristol is an option for families who want a more active indoor day. Choose a session that fits your children rather than assuming every activity is suitable for everyone.&lt;/p&gt;&lt;p&gt;Our family idea: book a session together and build in time to arrive, change and hear the briefing. Plan a drink and a slower-paced break afterwards.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Active children, with the right age-specific session." facilities="Indoor trampoline activities and an on-site cafe." parking="Use the venue's directions to its Cribbs Causeway site and check parking arrangements before travel." goodToKnow="Book the correct session and check age, height, supervision, grip-sock and waiver requirements. Individual attractions may have different restrictions.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="AirHop Bristol, Unit 5, Britannia Road, Patchway, Bristol, BS34 5TA" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=AirHop%20Bristol%2C%20Unit%205%2C%20Britannia%20Road%2C%20Patchway%2C%20Bristol%2C%20BS34%205TA&amp;dir_action=navigate" travelNote="Use the venue's directions to its Cribbs Causeway site and check parking arrangements before travel. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS34 5TA" mapEmbedUrl="https://www.google.com/maps?q=AirHop%20Bristol%2C%20Unit%205%2C%20Britannia%20Road%2C%20Patchway%2C%20Bristol%2C%20BS34%205TA&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.airhop.co.uk/adventure-trampoline-park-bristol/&quot;&gt;Official visitor information for AirHop Bristol&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/indoor-activities.html&quot;&gt;Explore more indoor activities&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.airhop.co.uk/adventure-trampoline-park-bristol/&quot;&gt;Official visitor information for AirHop Bristol&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://www.airhop.co.uk/bristol-adventure-trampoline-park/&quot;&gt;Trampoline courts at AirHop Bristol&lt;/a&gt; — AirHop. &lt;a href=&quot;https://www.airhop.co.uk/bristol-adventure-trampoline-park/&quot;&gt;All rights reserved&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

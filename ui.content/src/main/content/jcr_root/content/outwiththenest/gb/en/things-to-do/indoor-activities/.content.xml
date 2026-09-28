@@ -1,29 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    jcr:primaryType="cq:Page">
-    <jcr:content
-        cq:lastModified="{Date}2026-09-21T10:31:23.513+01:00"
-        cq:lastModifiedBy="admin"
-        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="Indoor Activities"
-        sling:resourceType="outwiththenest/components/page">
-        <root
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="outwiththenest/components/container"
-            layout="responsiveGrid">
-            <container
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="outwiththenest/components/container"
-                layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/title"/>
-                <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/container"
-                    layout="responsiveGrid"/>
-            </container>
-        </root>
-    </jcr:content>
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/category-page" sling:resourceType="outwiththenest/components/page" jcr:title="Indoor Activities" jcr:description="Science, sea life, swimming and cinema: find an indoor adventure to suit your family." shortDescription="Science, sea life, swimming and cinema: find an indoor adventure to suit your family." hideInDiscovery="{Boolean}true" featuredImage="/content/dam/outwiththenest/venues/we-the-curious.jpg">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <compactcategoryhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/compactcategoryhero" jcr:title="Indoor Activities" jcr:description="&lt;p&gt;Science, sea life, swimming and cinema: find an indoor adventure to suit your family.&lt;/p&gt;" pretitle="Make a day of it, whatever the weather" titleFromPage="{Boolean}true" descriptionFromPage="{Boolean}false" textIsRich="{Boolean}true" titleType="h1" fileReference="/content/dam/outwiththenest/venues/we-the-curious.jpg" imageFromPageImage="{Boolean}false" alt="Bristol (UK), Planetarium -- 2013 -- 1645"></compactcategoryhero>
+          <sectionintro jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/sectionintro" title="Make a day of it, whatever the weather" description="Science, sea life, swimming and cinema: find an indoor adventure to suit your family."></sectionintro>
+          <discoverylisting jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/discoverylisting" sourcePage="/content/outwiththenest/gb/en/things-to-do/indoor-activities" title="Places to explore" maxItems="0" showCount="{Boolean}true"></discoverylisting>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+  <we-the-curious />
+  <bristol-aquarium />
+  <airhop-bristol />
+  <strode-leisure-centre />
+  <curzon-cinema />
 </jcr:root>
