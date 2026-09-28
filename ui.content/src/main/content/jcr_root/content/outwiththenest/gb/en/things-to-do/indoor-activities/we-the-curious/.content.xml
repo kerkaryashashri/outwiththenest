@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="We The Curious" jcr:description="Hands-on science, questions and experiments beside Millennium Square." pageTitle="We The Curious" shortDescription="Hands-on science, questions and experiments beside Millennium Square." location="Bristol" environment="Indoors" ageGroup="All ages" costType="Paid" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/we-the-curious.jpg" featuredImageAlt="Bristol (UK), Planetarium -- 2013 -- 1645">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="INDOOR ACTIVITIES"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;We The Curious is a place to explore ideas by trying things out together. Let children lead the way through the interactive exhibits, making predictions and comparing what happens.&lt;/p&gt;&lt;p&gt;Our family idea: choose one question to investigate as a team, then give everyone a turn to pick the next activity. A planetarium show can add something special if a suitable session is available.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families who enjoy experimenting and asking why." facilities="Interactive exhibits, cafe, toilets and spaces to eat a packed lunch." parking="Millennium Square car park is beneath the venue; check travel information before setting off." goodToKnow="Book ahead. Planetarium shows have separate booking and age requirements; 3D shows are not available to under-six children.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="We The Curious, One Millennium Square, Bristol, BS1 5DB" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=We%20The%20Curious%2C%20One%20Millennium%20Square%2C%20Bristol%2C%20BS1%205DB&amp;dir_action=navigate" travelNote="Millennium Square car park is beneath the venue; check travel information before setting off. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS1 5DB" mapEmbedUrl="https://www.google.com/maps?q=We%20The%20Curious%2C%20One%20Millennium%20Square%2C%20Bristol%2C%20BS1%205DB&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.wethecurious.org/visit-us/plan-your-visit&quot;&gt;Official visitor information for We The Curious&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/indoor-activities.html&quot;&gt;Explore more indoor activities&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.wethecurious.org/visit-us/plan-your-visit&quot;&gt;Official visitor information for We The Curious&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Bristol_(UK),_Planetarium_--_2013_--_1645.jpg&quot;&gt;Bristol (UK), Planetarium -- 2013 -- 1645&lt;/a&gt; — Dietmar Rabich. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

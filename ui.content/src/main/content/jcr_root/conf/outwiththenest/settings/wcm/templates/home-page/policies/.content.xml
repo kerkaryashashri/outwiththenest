@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mappings" cq:policy="outwiththenest/components/page/site">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/page-shell">
+      <header jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/experiencefragment/header"></header>
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/page-main">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/home-body">
+          <herocarousel jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/herocarousel/slides">
+            <outwiththenest jcr:primaryType="nt:unstructured">
+              <components jcr:primaryType="nt:unstructured">
+                <hero jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/hero/carousel-heading"></hero>
+              </components>
+            </outwiththenest>
+          <hero jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/hero/carousel-heading"/><hero_1337301770_copy_1496400836 jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/hero/carousel-heading"/><hero_1337301770_copy jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/hero/carousel-heading"/><hero_1337301770 jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/hero/carousel-heading"/></herocarousel>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/home-featured"></container>
+        </container>
+      </container>
+      <footer jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/experiencefragment/footer"></footer>
+    </root>
+  </jcr:content>
+</jcr:root>

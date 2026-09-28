@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mappings" cq:policy="outwiththenest/components/page/site">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/page-shell">
+      <header jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/experiencefragment/header"></header>
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/page-main">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/place-body">
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/container/place-details"></container>
+        </container>
+      </container>
+      <footer jcr:primaryType="nt:unstructured" sling:resourceType="wcm/core/components/policies/mapping" cq:policy="outwiththenest/components/experiencefragment/footer"></footer>
+    </root>
+  </jcr:content>
+</jcr:root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="The Red Lodge Museum" jcr:description="Step into a historic house with an Elizabethan room and a knot garden." pageTitle="The Red Lodge Museum" shortDescription="Step into a historic house with an Elizabethan room and a knot garden." location="Bristol" environment="Indoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/red-lodge-museum.jpg" featuredImageAlt="The Red Lodge, Park Row, Bristol - DSC05845">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="MUSEUMS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;Behind the red door, the Red Lodge tells the story of a building that has served very different purposes over four centuries. The Great Oak Room is a chance to slow down and look closely at the details of an Elizabethan interior.&lt;/p&gt;&lt;p&gt;Our family idea: ask children to spot patterns in the room, then look for shapes in the garden. Keep the visit unhurried and choose a few details to talk about together.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Older children who enjoy historic buildings and close-up discoveries." facilities="Historic rooms and a knot garden; check the visitor guide for facilities." parking="Use city-centre public transport or public parking, allowing time for the walk to Park Row." goodToKnow="This historic building has access limitations and seasonal opening. Read the access information before bringing a buggy or wheelchair.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="The Red Lodge Museum, Park Row, Bristol, BS1 5LJ" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=The%20Red%20Lodge%20Museum%2C%20Park%20Row%2C%20Bristol%2C%20BS1%205LJ&amp;dir_action=navigate" travelNote="Use city-centre public transport or public parking, allowing time for the walk to Park Row. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS1 5LJ" mapEmbedUrl="https://www.google.com/maps?q=The%20Red%20Lodge%20Museum%2C%20Park%20Row%2C%20Bristol%2C%20BS1%205LJ&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.bristolmuseums.org.uk/red-lodge-museum/&quot;&gt;Official visitor information for The Red Lodge Museum&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/museums.html&quot;&gt;Explore more museums&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.bristolmuseums.org.uk/red-lodge-museum/&quot;&gt;Official visitor information for The Red Lodge Museum&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:The_Red_Lodge,_Park_Row,_Bristol_-_DSC05845.JPG&quot;&gt;The Red Lodge, Park Row, Bristol - DSC05845&lt;/a&gt; — Rept0n1x. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0&quot;&gt;CC BY-SA 3.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Salthouse Fields" jcr:description="Seafront play, grassy picnic space and a gentle wander beside Clevedon Marine Lake." pageTitle="Salthouse Fields" shortDescription="Seafront play, grassy picnic space and a gentle wander beside Clevedon Marine Lake." location="Clevedon" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/salthouse-fields.jpg" featuredImageAlt="Salthouse Skate Park">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="PLAYGROUNDS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE CLEVEDON" description="&lt;p&gt;Salthouse Fields is a handy starting point for a Clevedon day out. The play areas and open grass give children room to move, with the seafront close by for a change of scenery.&lt;/p&gt;&lt;p&gt;Our family idea: bring a picnic and choose between another turn on the playground or a short stroll by Marine Lake. Look for the model railway when it is operating; rides are a separate paid activity.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Younger children, relaxed picnics and short seaside outings." facilities="Play areas, skate park, tennis courts and a seasonal model railway." parking="Use signed seafront parking and check the current tariff and time limits." goodToKnow="Entry to the fields is free; rides and other activities may cost extra. Supervise children beside the lake and seafront.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Salthouse Fields, Old Church Road, Clevedon, BS21 7TU" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Salthouse%20Fields%2C%20Old%20Church%20Road%2C%20Clevedon%2C%20BS21%207TU&amp;dir_action=navigate" travelNote="Use signed seafront parking and check the current tariff and time limits. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS21 7TU" mapEmbedUrl="https://www.google.com/maps?q=Salthouse%20Fields%2C%20Old%20Church%20Road%2C%20Clevedon%2C%20BS21%207TU&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.discoverclevedon.co.uk/thing-to-do/salthouse-fields/&quot;&gt;Official visitor information for Salthouse Fields&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/playgrounds.html&quot;&gt;Explore more playgrounds&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.discoverclevedon.co.uk/thing-to-do/salthouse-fields/&quot;&gt;Official visitor information for Salthouse Fields&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Salthouse_Skate_Park_-_geograph.org.uk_-_5550034.jpg&quot;&gt;Salthouse Skate Park&lt;/a&gt; — Derek Harper. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.0&quot;&gt;CC BY-SA 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

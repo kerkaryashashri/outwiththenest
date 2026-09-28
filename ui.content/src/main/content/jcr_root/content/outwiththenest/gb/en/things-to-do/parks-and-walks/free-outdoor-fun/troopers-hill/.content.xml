@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Troopers Hill Nature Reserve" jcr:description="A hillside nature reserve with city views and a distinctive industrial chimney." pageTitle="Troopers Hill Nature Reserve" shortDescription="A hillside nature reserve with city views and a distinctive industrial chimney." location="Bristol" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/troopers-hill.jpg" featuredImageAlt="Troopers Hill 24.07.2012 01">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="FREE OUTDOOR FUN"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;Troopers Hill offers an unusual landscape for a Bristol day out. Its open slopes and historic chimney provide a setting for a short walk that feels different from a traditional city park.&lt;/p&gt;&lt;p&gt;Our family idea: find a comfortable, safe stopping point and see how many distant landmarks everyone can identify. Bring a sketchbook to capture the hill's outline rather than rushing to cover every path.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families with confident walkers who enjoy viewpoints and local history." facilities="Nature-reserve paths; the nearest public toilets are at St George Park." parking="Plan public transport or legal local parking and keep residential access clear." goodToKnow="Paths can be steep and uneven. Choose footwear with grip and keep children away from abrupt drops.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Troopers Hill Nature Reserve, Troopers Hill Road, Bristol, BS5 8BL" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Troopers%20Hill%20Nature%20Reserve%2C%20Troopers%20Hill%20Road%2C%20Bristol%2C%20BS5%208BL&amp;dir_action=navigate" travelNote="Plan public transport or legal local parking and keep residential access clear. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS5 8BL" mapEmbedUrl="https://www.google.com/maps?q=Troopers%20Hill%20Nature%20Reserve%2C%20Troopers%20Hill%20Road%2C%20Bristol%2C%20BS5%208BL&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/nature-reserves/troopers-hill&quot;&gt;Visitor information for Troopers Hill Nature Reserve&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/free-outdoor-fun.html&quot;&gt;Explore more free outdoor fun&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/nature-reserves/troopers-hill&quot;&gt;Visitor information for Troopers Hill Nature Reserve&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Troopers_Hill_24.07.2012_01.jpg&quot;&gt;Troopers Hill 24.07.2012 01&lt;/a&gt; — Janusz Jankowski. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

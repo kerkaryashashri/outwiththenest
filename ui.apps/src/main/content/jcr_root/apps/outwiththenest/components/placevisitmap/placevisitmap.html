@@ -1,7 +1,7 @@
 <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
      data-sly-use.model="com.outwiththenest.core.models.PlaceVisitMapModel"/>
 
-<sly data-sly-set.directionsUrl="${model.directionsUrl || properties.directionsUrl}"/>
+<sly data-sly-set.directionsUrl="${properties.directionsUrl || model.directionsUrl}"/>
 
 <section class="cmp-place-visit-map"
          data-sly-test="${properties.address || properties.mapEmbedUrl}">
@@ -21,12 +21,8 @@
                 ${properties.address}
             </p>
 
-            <p class="cmp-place-visit-map__resolved-location"
-               data-sly-test="${model.locationFound}">
-                Location verified for ${model.resolvedPostcode}
-                <span data-sly-test="${model.region}">
-                    · ${model.region}
-                </span>
+            <p class="cmp-place-visit-map__address" data-sly-test="${properties.postcode}">
+                <span>Arrival postcode: <strong>${properties.postcode}</strong></span>
             </p>
 
             <p class="cmp-place-visit-map__note"
@@ -39,7 +35,7 @@
                href="${directionsUrl @ context='uri'}"
                target="_blank"
                rel="noopener noreferrer">
-                Get directions
+                Directions from your location
                 <span aria-hidden="true">→</span>
             </a>
         </div>

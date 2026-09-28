@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Curzon Cinema &amp; Arts" jcr:description="Share a big-screen story at Clevedon's historic community cinema." pageTitle="Curzon Cinema &amp; Arts" shortDescription="Share a big-screen story at Clevedon's historic community cinema." location="Clevedon" environment="Indoors" ageGroup="All ages" costType="Paid" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/curzon-cinema.jpg" featuredImageAlt="The Curzon Cinema Clevedon, the oldest continualy working cinema in the world.">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="INDOOR ACTIVITIES"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE CLEVEDON" description="&lt;p&gt;The Curzon makes a local cinema trip feel like an occasion. Pick a film from the current programme and enjoy a shared story in a building with a long connection to the town.&lt;/p&gt;&lt;p&gt;Our family idea: let children help choose an age-appropriate screening, then talk about a favourite scene on the way home. For a first cinema visit, consider the running time as well as the film certificate.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families who enjoy films and a calmer indoor outing." facilities="Cinema screenings and a box office; check the access information when booking." parking="Public car parks off Great Western Road are a short walk away; check their current charges." goodToKnow="Book for a specific screening. Check the film certificate, running time and any access requirements before choosing seats.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Curzon Cinema &amp; Arts, 46 Old Church Road, Clevedon, BS21 6NN" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Curzon%20Cinema%20%26%20Arts%2C%2046%20Old%20Church%20Road%2C%20Clevedon%2C%20BS21%206NN&amp;dir_action=navigate" travelNote="Public car parks off Great Western Road are a short walk away; check their current charges. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS21 6NN" mapEmbedUrl="https://www.google.com/maps?q=Curzon%20Cinema%20%26%20Arts%2C%2046%20Old%20Church%20Road%2C%20Clevedon%2C%20BS21%206NN&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.curzon.org.uk/contact/&quot;&gt;Official visitor information for Curzon Cinema &amp;amp; Arts&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/indoor-activities.html&quot;&gt;Explore more indoor activities&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.curzon.org.uk/contact/&quot;&gt;Official visitor information for Curzon Cinema &amp;amp; Arts&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:The_Curzon_Cinema_Clevedon,_the_oldest_continualy_working_cinema_in_the_world._-_panoramio.jpg&quot;&gt;The Curzon Cinema Clevedon, the oldest continualy working cinema in the world.&lt;/a&gt; — Jusben. &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0&quot;&gt;CC BY 3.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

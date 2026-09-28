@@ -82,11 +82,25 @@ to restore the site on a fresh AEM author and export future author changes to Gi
 ## Static website demo
 
 A standalone HTML/CSS/JavaScript preview is available in [`docs/index.html`](docs/index.html).
-It includes the homepage, a searchable Parks & Walks listing, and a Coastal Walks
-detail page using the project's AEM content and images. Open the HTML locally,
+It includes the homepage, a Things to Do hub, searchable Parks & Walks, Museums
+and Indoor Activities listings, and 45 real venue pages. Parks & Walks includes
+only its six category pages, with all 35 outdoor venue guides organised beneath them.
+The venue pages reuse the AEM content template's place hero,
+about, practical information and visit components. Open the HTML locally,
 or follow the [GitHub Pages publishing steps](docs/DEPLOY.md) to host it.
 
 To refresh the generated pages and selected assets, run `node scripts/build-demo.mjs`.
+
+Start browsing at [`docs/things-to-do.html`](docs/things-to-do.html). Museums and
+Indoor Activities each have five venues. Parks & Walks contains Coastal Walks (5),
+Woodland Trails (6), Playgrounds (6), Picnic Spots (6), Family Walks (7),
+and Free Outdoor Fun (5). The original Coastal Walks guide is preserved
+with its five-place listing added. Browse these from [`docs/parks.html`](docs/parks.html).
+Edit the authored pages under
+`ui.content/src/main/content/jcr_root/content/outwiththenest/gb/en/things-to-do`
+and rebuild the preview to update their content. Each venue links to its official
+visitor information. Suggested family activities are editorial ideas; current
+opening times and ticket prices remain on the venue's website. All 45 venue guides now include DAM photography, arrival postcodes, embedded maps and directions from the visitor's location. The nine category pages also have relevant photography. Source photographs and licence details are recorded in [image credits](reference/IMAGE-CREDITS.md); arrival references are listed in [location sources](docs/LOCATION-SOURCES.md). Google Maps uses the device location when available and otherwise lets visitors enter their starting point.
 
 ## Screenshots
 

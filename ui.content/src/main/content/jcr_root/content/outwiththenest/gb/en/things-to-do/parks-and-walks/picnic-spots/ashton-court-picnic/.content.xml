@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="A Picnic at Ashton Court" jcr:description="Spread a blanket in open parkland and add a short estate walk." pageTitle="A Picnic at Ashton Court" shortDescription="Spread a blanket in open parkland and add a short estate walk." location="Bristol" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/ashton-court-estate.jpg" featuredImageAlt="Long Ashton , Ashton Court Estate">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="PICNIC SPOTS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;Ashton Court is well suited to a picnic that becomes the centre of your day. Its open grassland and woodland routes let families combine time sitting together with space to explore.&lt;/p&gt;&lt;p&gt;Our family idea: choose your picnic spot before starting a short walk so children know where lunch will be. Pack a bag for every scrap of rubbish and leave wildlife to find its own food.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families who want a spacious picnic setting and optional walking." facilities="Estate cafes, toilets and paths; choose a spot near the facilities you need." parking="Use estate parking and check the current tariff and gate times." goodToKnow="Some parts of the estate are hilly. Keep away from deer enclosures and follow notices about wildlife, events and permitted activities.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Ashton Court Estate, Long Ashton, Bristol, BS41 9JN" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Ashton%20Court%20Estate%2C%20Long%20Ashton%2C%20Bristol%2C%20BS41%209JN&amp;dir_action=navigate" travelNote="Use estate parking and check the current tariff and gate times. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS41 9JN" mapEmbedUrl="https://www.google.com/maps?q=Ashton%20Court%20Estate%2C%20Long%20Ashton%2C%20Bristol%2C%20BS41%209JN&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-and-estates/ashton-court-estate&quot;&gt;Visitor information for A Picnic at Ashton Court&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/picnic-spots.html&quot;&gt;Explore more picnic spots&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-and-estates/ashton-court-estate&quot;&gt;Visitor information for A Picnic at Ashton Court&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Long_Ashton_,_Ashton_Court_Estate_-_geograph.org.uk_-_6520317.jpg&quot;&gt;Long Ashton , Ashton Court Estate&lt;/a&gt; — Lewis Clarke. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.0&quot;&gt;CC BY-SA 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

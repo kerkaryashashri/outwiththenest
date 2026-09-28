@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Queen Square Picnic" jcr:description="A green city-centre pause between harbour exploring and the journey home." pageTitle="Queen Square Picnic" shortDescription="A green city-centre pause between harbour exploring and the journey home." location="Bristol" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/queen-square-picnic.jpg" featuredImageAlt="Queen Square, Bristol, 2006 (03)">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="PICNIC SPOTS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;Queen Square provides a grassy space among Bristol's city streets. It works particularly well for a packed lunch during a day that already includes the harbour or nearby museums.&lt;/p&gt;&lt;p&gt;Our family idea: bring a compact picnic and enjoy a short people-watching break. Afterwards, walk around the square together and notice the shapes of the surrounding buildings before continuing your day.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families wanting a short picnic stop in the city centre." facilities="Public green space, with city-centre shops and refreshments nearby." parking="Use public transport or city-centre car parks; check restrictions on surrounding streets." goodToKnow="This is an urban square rather than an enclosed play park. Keep children away from surrounding roads and check for event-related access changes.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Queen Square, Bristol city centre, BS1 4LH" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Queen%20Square%2C%20Bristol%20city%20centre%2C%20BS1%204LH&amp;dir_action=navigate" travelNote="Use public transport or city-centre car parks; check restrictions on surrounding streets. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS1 4LH" mapEmbedUrl="https://www.google.com/maps?q=Queen%20Square%2C%20Bristol%20city%20centre%2C%20BS1%204LH&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-and-estates/queen-square&quot;&gt;Visitor information for Queen Square Picnic&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/picnic-spots.html&quot;&gt;Explore more picnic spots&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-and-estates/queen-square&quot;&gt;Visitor information for Queen Square Picnic&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Queen_Square,_Bristol,_2006_(03).jpg&quot;&gt;Queen Square, Bristol, 2006 (03)&lt;/a&gt; — Bahnfrend. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

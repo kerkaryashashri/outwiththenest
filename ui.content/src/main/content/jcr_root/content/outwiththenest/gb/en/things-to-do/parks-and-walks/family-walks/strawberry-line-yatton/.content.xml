@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Strawberry Line from Yatton" jcr:description="Follow a former railway line on a walk you can make as short as you like." pageTitle="Strawberry Line from Yatton" shortDescription="Follow a former railway line on a walk you can make as short as you like." location="North Somerset" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/strawberry-line-yatton.jpg" featuredImageAlt="Strawberry Line NCN26 Path at Yatton">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="FAMILY WALKS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE NORTH SOMERSET" description="&lt;p&gt;The Strawberry Line follows the former railway through the North Somerset countryside. Starting at Yatton makes an out-and-back walk straightforward, with no need to complete the full route to enjoy the landscape.&lt;/p&gt;&lt;p&gt;Our family idea: set a gentle turning point before you begin and watch for birds in the surrounding wetlands. Leave space for cyclists and take breaks off the main path.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families wanting a flexible walk on a shared walking and cycling trail." facilities="Trail access from Yatton station; bring drinks for the walk." parking="Yatton station parking is charged; arriving by train is another option." goodToKnow="Check current closure notices before travel. The full trail includes road crossings, and surface conditions vary with weather.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Strawberry Line start, Yatton station, Station Road, Yatton, BS49 4AJ" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Strawberry%20Line%20start%2C%20Yatton%20station%2C%20Station%20Road%2C%20Yatton%2C%20BS49%204AJ&amp;dir_action=navigate" travelNote="Yatton station parking is charged; arriving by train is another option. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS49 4AJ" mapEmbedUrl="https://www.google.com/maps?q=Strawberry%20Line%20start%2C%20Yatton%20station%2C%20Station%20Road%2C%20Yatton%2C%20BS49%204AJ&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/parks-countryside/parks-open-spaces/strawberry-line-heritage-trail&quot;&gt;Visitor information for Strawberry Line from Yatton&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/family-walks.html&quot;&gt;Explore more family walks&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/parks-countryside/parks-open-spaces/strawberry-line-heritage-trail&quot;&gt;Visitor information for Strawberry Line from Yatton&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Strawberry_Line_NCN26_Path_at_Yatton_-_geograph.org.uk_-_6956690.jpg&quot;&gt;Strawberry Line NCN26 Path at Yatton&lt;/a&gt; — Kevin Pearson. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.0&quot;&gt;CC BY-SA 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

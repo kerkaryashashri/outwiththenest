@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Aerospace Bristol" jcr:description="Explore Bristol's aviation story and see the last Concorde to fly." pageTitle="Aerospace Bristol" shortDescription="Explore Bristol's aviation story and see the last Concorde to fly." location="Bristol" environment="Indoors" ageGroup="All ages" costType="Paid" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/aerospace-bristol.jpg" featuredImageAlt="Ex-British Airways Concorde 216 (G-BOAF) on display at Aerospace Bristol 8August2019 arp">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="MUSEUMS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;Aerospace Bristol brings the region's aircraft and engineering heritage into focus. Concorde is the headline attraction, with other displays helping families discover the people and ideas behind flight.&lt;/p&gt;&lt;p&gt;Our family idea: invite children to choose a favourite aircraft detail and sketch it after the visit. Leave enough time to explore the wider museum as well as the Concorde hangar.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Aircraft enthusiasts and children who enjoy engineering." facilities="Museum displays, cafe and an outdoor aircraft-themed play area." parking="Visitor parking is on site. Follow the museum's entrance directions from Hayes Way." goodToKnow="Admission is ticketed. Check current prices and access arrangements; the postcode alone may not lead to the vehicle entrance.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Aerospace Bristol, Hayes Way, Patchway, Bristol, BS34 5BZ" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Aerospace%20Bristol%2C%20Hayes%20Way%2C%20Patchway%2C%20Bristol%2C%20BS34%205BZ&amp;dir_action=navigate" travelNote="Visitor parking is on site. Follow the museum's entrance directions from Hayes Way. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS34 5BZ" mapEmbedUrl="https://www.google.com/maps?q=Aerospace%20Bristol%2C%20Hayes%20Way%2C%20Patchway%2C%20Bristol%2C%20BS34%205BZ&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://aerospacebristol.org/&quot;&gt;Official visitor information for Aerospace Bristol&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/museums.html&quot;&gt;Explore more museums&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://aerospacebristol.org/&quot;&gt;Official visitor information for Aerospace Bristol&lt;/a&gt;. Check current opening times, access and booking details before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Ex-British_Airways_Concorde_216_(G-BOAF)_on_display_at_Aerospace_Bristol_8August2019_arp.jpg&quot;&gt;Ex-British Airways Concorde 216 (G-BOAF) on display at Aerospace Bristol 8August2019 arp&lt;/a&gt; — Myself (Adrian Pingstone).. &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Ex-British_Airways_Concorde_216_(G-BOAF)_on_display_at_Aerospace_Bristol_8August2019_arp.jpg&quot;&gt;Public domain&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

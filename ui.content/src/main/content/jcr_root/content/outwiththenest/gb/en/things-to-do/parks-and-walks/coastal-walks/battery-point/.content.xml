@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Battery Point, Portishead" jcr:description="Watch the estuary from a headland beside Portishead's seafront." pageTitle="Battery Point, Portishead" shortDescription="Watch the estuary from a headland beside Portishead's seafront." location="North Somerset" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/battery-point.jpg" featuredImageAlt="Battery Point lighthouse, Portishead, England arp">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="COASTAL WALKS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE NORTH SOMERSET" description="&lt;p&gt;Battery Point is a place to stop and take in the scale of the Severn Estuary. The navigation light, passing shipping and views towards Wales offer plenty to notice without planning a long hike.&lt;/p&gt;&lt;p&gt;Combine a visit to the viewpoint with a short walk along the Esplanade. Our family idea: take turns describing a distant object for everyone else to find, then pause on a public seat for a snack.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Ship spotting and a short coastal outing with confident walkers." facilities="Public seats at the point; seafront refreshments nearby." parking="Use signed Lake Grounds or seafront parking, observing local restrictions." goodToKnow="Access includes steps or uneven paths. Keep back from the edges; the water has strong currents and is not a swimming spot.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Battery Point, Esplanade, Portishead, BS20 7HD" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Battery%20Point%2C%20Esplanade%2C%20Portishead%2C%20BS20%207HD&amp;dir_action=navigate" travelNote="Use signed Lake Grounds or seafront parking, observing local restrictions. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS20 7HD" mapEmbedUrl="https://www.google.com/maps?q=Battery%20Point%2C%20Esplanade%2C%20Portishead%2C%20BS20%207HD&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.visitportishead.net/battery-point.php&quot;&gt;Visitor information for Battery Point, Portishead&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/coastal-walks.html&quot;&gt;Explore more coastal walks&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.visitportishead.net/battery-point.php&quot;&gt;Visitor information for Battery Point, Portishead&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Battery_Point_lighthouse,_Portishead,_England_arp.jpg&quot;&gt;Battery Point lighthouse, Portishead, England arp&lt;/a&gt; — Myself (Adrian Pingstone).. &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Battery_Point_lighthouse,_Portishead,_England_arp.jpg&quot;&gt;Public domain&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

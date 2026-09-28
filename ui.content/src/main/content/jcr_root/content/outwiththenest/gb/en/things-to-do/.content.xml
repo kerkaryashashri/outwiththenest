@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2026-09-21T10:27:26.129+01:00"
-        cq:lastModifiedBy="admin"
-        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Things to Do"
-        sling:resourceType="outwiththenest/components/page">
+        cq:template="/conf/outwiththenest/settings/wcm/templates/page-content"
+        sling:resourceType="outwiththenest/components/page"
+        jcr:title="Things to Do">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="outwiththenest/components/container"
@@ -16,17 +14,63 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="outwiththenest/components/container"
                 layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="outwiththenest/components/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="outwiththenest/components/container"
-                    layout="responsiveGrid"/>
+                    layout="responsiveGrid">
+                    <breadcrumb
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/breadcrumb"
+                        startLevel="4"
+                        hideCurrent="{Boolean}false"></breadcrumb>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/title"
+                        jcr:title="Things to Do"
+                        type="h1" />
+                    <sectionintro
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/sectionintro"
+                        title="What shall we do today?"
+                        description="Find your next family day out around Bristol, Clevedon and North Somerset."></sectionintro>
+                    <category0
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/placeabout"
+                        heading="Parks and Walks"
+                        description="&lt;p&gt;Woodland wanders, open parkland and seaside picnics for a day together.&lt;/p&gt;"
+                        textIsRich="{Boolean}true"></category0>
+                    <explore0
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/button"
+                        text="Explore parks and walks"
+                        link="/content/outwiththenest/gb/en/things-to-do/parks-and-walks.html"></explore0>
+                    <category1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/placeabout"
+                        heading="Museums"
+                        description="&lt;p&gt;Explore local stories, historic houses and remarkable aircraft at family-friendly museums.&lt;/p&gt;"
+                        textIsRich="{Boolean}true"></category1>
+                    <explore1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/button"
+                        text="Explore museums"
+                        link="/content/outwiththenest/gb/en/things-to-do/museums.html"></explore1>
+                    <category2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/placeabout"
+                        heading="Indoor Activities"
+                        description="&lt;p&gt;Science, sea life, swimming and cinema: find an indoor adventure to suit your family.&lt;/p&gt;"
+                        textIsRich="{Boolean}true"></category2>
+                    <explore2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="outwiththenest/components/button"
+                        text="Explore indoor activities"
+                        link="/content/outwiththenest/gb/en/things-to-do/indoor-activities.html"></explore2>
+                </container>
             </container>
         </root>
     </jcr:content>
-    <parks-and-walks/>
-    <museums/>
-    <indoor-activities/>
+    <parks-and-walks />
+    <museums />
+    <indoor-activities />
 </jcr:root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Clifton and Durdham Downs" jcr:description="Open grassland for a no-ticket afternoon of walking and simple outdoor games." pageTitle="Clifton and Durdham Downs" shortDescription="Open grassland for a no-ticket afternoon of walking and simple outdoor games." location="Bristol" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/clifton-downs.jpg" featuredImageAlt="Durdham Downs, Bristol">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="FREE OUTDOOR FUN"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE BRISTOL" description="&lt;p&gt;The Downs give Bristol families a large open landscape to enjoy without an admission charge. A short walk, a picnic or an informal game can be enough to fill a happy afternoon.&lt;/p&gt;&lt;p&gt;Our family idea: bring a soft ball and choose a space well away from roads and other activities. Take turns inventing a simple game, then pack everything away for a short wander.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families wanting open space and a flexible outdoor plan." facilities="Open grassland and walking paths; check the council visitor information for facilities." parking="Observe parking restrictions around the Downs or use public transport." goodToKnow="Roads cross and border the area. Keep games away from traffic and stay well back from Avon Gorge edges.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Clifton and Durdham Downs, Stoke Road, Bristol, BS9 1FG" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Clifton%20and%20Durdham%20Downs%2C%20Stoke%20Road%2C%20Bristol%2C%20BS9%201FG&amp;dir_action=navigate" travelNote="Observe parking restrictions around the Downs or use public transport. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS9 1FG" mapEmbedUrl="https://www.google.com/maps?q=Clifton%20and%20Durdham%20Downs%2C%20Stoke%20Road%2C%20Bristol%2C%20BS9%201FG&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-and-estates/the-downs&quot;&gt;Visitor information for Clifton and Durdham Downs&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/free-outdoor-fun.html&quot;&gt;Explore more free outdoor fun&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-and-estates/the-downs&quot;&gt;Visitor information for Clifton and Durdham Downs&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Durdham_Downs,_Bristol_-_geograph.org.uk_-_3000963.jpg&quot;&gt;Durdham Downs, Bristol&lt;/a&gt; — David Purchase. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.0&quot;&gt;CC BY-SA 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

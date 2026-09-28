@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Sand Point Headland Walk" jcr:description="An open coastal headland above Sand Bay, with rocky ground and far-reaching views." pageTitle="Sand Point Headland Walk" shortDescription="An open coastal headland above Sand Bay, with rocky ground and far-reaching views." location="North Somerset" environment="Outdoors" ageGroup="12+ years" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/sand-point.jpg" featuredImageAlt="Geograph 3162253 North Somerset Sand Point">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="COASTAL WALKS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE NORTH SOMERSET" description="&lt;p&gt;Sand Point projects into the Bristol Channel north of Weston-super-Mare. Its grassland and limestone landscape make a rewarding walk for families who enjoy a more exposed countryside outing.&lt;/p&gt;&lt;p&gt;Use the National Trust route guide to plan your walk and allow longer than an adult walking pace. Our family idea: stop well away from the edges and look for birds using the wind above the headland.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Older children and families used to uneven countryside paths." facilities="A car park serves the walk; refreshments can be found in nearby Kewstoke." parking="Use the Sand Point car park and check the current parking tariff." goodToKnow="The circular route has steep sections, uneven ground and stiles. Supervise children near drops and keep dogs controlled around livestock.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Sand Point car park, Kewstoke, near Weston-super-Mare, BS22 9UD" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Sand%20Point%20car%20park%2C%20Kewstoke%2C%20near%20Weston-super-Mare%2C%20BS22%209UD&amp;dir_action=navigate" travelNote="Use the Sand Point car park and check the current parking tariff. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS22 9UD" mapEmbedUrl="https://www.google.com/maps?q=Sand%20Point%20car%20park%2C%20Kewstoke%2C%20near%20Weston-super-Mare%2C%20BS22%209UD&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.nationaltrust.org.uk/visit/somerset/mendip-hills/sand-point-circular-coast-walk&quot;&gt;Visitor information for Sand Point Headland Walk&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/coastal-walks.html&quot;&gt;Explore more coastal walks&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.nationaltrust.org.uk/visit/somerset/mendip-hills/sand-point-circular-coast-walk&quot;&gt;Visitor information for Sand Point Headland Walk&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Geograph_3162253_North_Somerset_Sand_Point.jpg&quot;&gt;Geograph 3162253 North Somerset Sand Point&lt;/a&gt; — Lewis Clarke. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.0&quot;&gt;CC BY-SA 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>

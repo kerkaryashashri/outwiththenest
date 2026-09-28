@@ -1,9 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/outwiththenest" mode="merge"/>
-    <filter root="/content/outwiththenest"/>
-    <filter root="/content/dam/outwiththenest"/>
-    <filter root="/content/dam/wknd-shared/en/magazine/western-australia/adobe-waadobe-wa-mg-3094.jpg" mode="merge"/>
-    <filter root="/content/dam/wknd-shared/en/magazine/alaska-adventure/camp-alaska.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/outwiththenest"/>
-</workspaceFilter>
+  <filter root="/conf/outwiththenest" mode="merge"><exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/herocarousel/slides(/.*)?"/><exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/hero/carousel-heading(/.*)?"/><exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/compactcategoryhero/page-heading(/.*)?"/>
+    <exclude pattern="/conf/outwiththenest/settings/wcm/templates/home-page(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/templates/category-page(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/templates/place-info-page(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/page-shell(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/page-main(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/place-body(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/place-details(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/home-body(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/home-featured(/.*)?" />
+    <exclude pattern="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/category-body(/.*)?" />
+  </filter>
+  <filter root="/content/outwiththenest" />
+  <filter root="/content/dam/outwiththenest" />
+  <filter root="/content/dam/wknd-shared/en/magazine/western-australia/adobe-waadobe-wa-mg-3094.jpg" mode="merge" />
+  <filter root="/content/dam/wknd-shared/en/magazine/alaska-adventure/camp-alaska.jpg" mode="merge" />
+  <filter root="/content/experience-fragments/outwiththenest" />
+  <filter root="/conf/outwiththenest/settings/wcm/templates/home-page" />
+  <filter root="/conf/outwiththenest/settings/wcm/templates/category-page" />
+  <filter root="/conf/outwiththenest/settings/wcm/templates/place-info-page" />
+  <filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/page-shell" />
+  <filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/page-main" />
+  <filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/place-body" />
+  <filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/place-details" />
+  <filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/home-body" />
+  <filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/home-featured" />
+  <filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/container/category-body" />
+<filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/compactcategoryhero/page-heading"/><filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/hero/carousel-heading"/><filter root="/conf/outwiththenest/settings/wcm/policies/outwiththenest/components/herocarousel/slides"/></workspaceFilter>

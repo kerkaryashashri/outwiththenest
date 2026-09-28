@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content jcr:primaryType="cq:PageContent" cq:template="/conf/outwiththenest/settings/wcm/templates/place-info-page" sling:resourceType="outwiththenest/components/page" jcr:title="Uphill Beach and Coastal Paths" jcr:description="Wide skies and an unhurried coastal outing at the southern end of Weston Bay." pageTitle="Uphill Beach and Coastal Paths" shortDescription="Wide skies and an unhurried coastal outing at the southern end of Weston Bay." location="North Somerset" environment="Outdoors" ageGroup="All ages" costType="Free" hideInDiscovery="{Boolean}false" featuredImage="/content/dam/outwiththenest/venues/uphill-coast.jpg" featuredImageAlt="Beach at Uphill, with Brean Down in the background">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/responsivegrid" layout="responsiveGrid">
+      <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+        <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+          <breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/breadcrumb" startLevel="4" hideCurrent="{Boolean}false"></breadcrumb>
+          <placedetailhero jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placedetailhero" eyebrow="COASTAL WALKS"></placedetailhero>
+          <container jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/container" layout="responsiveGrid">
+            <placeabout jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="About this place" eyebrow="EXPLORE NORTH SOMERSET" description="&lt;p&gt;Uphill offers a quieter starting point for exploring the coast near Weston-super-Mare. The beach, village and nearby hillside create a varied setting for a family walk without needing to travel far between stops.&lt;/p&gt;&lt;p&gt;Choose a short beach-side outing or consult the council's Uphill walks guide for a longer route. Our family idea: compare the view towards Brean Down with the view back along Weston Bay and sketch the outline of the hills.&lt;/p&gt;" textIsRich="{Boolean}true">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placeabout>
+            <placepracticalinfo jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placepracticalinfo" heading="Practical information" bestFor="Families who want sea views and a flexible-length walk." facilities="Village services are nearby; bring what you need for your chosen route." parking="Follow local signs for parking near Links Road and check beach-parking conditions before arrival." goodToKnow="Stay away from tidal mud and observe beach notices. Longer routes can include slopes and uneven paths; check the route before bringing a buggy.">
+              <cq:responsive jcr:primaryType="nt:unstructured">
+                <default jcr:primaryType="nt:unstructured" width="5" offset="0" />
+                <tablet jcr:primaryType="nt:unstructured" width="6" offset="0" />
+                <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              </cq:responsive>
+            </placepracticalinfo>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+              <default jcr:primaryType="nt:unstructured" width="10" offset="1" />
+              <tablet jcr:primaryType="nt:unstructured" width="12" offset="0" />
+              <phone jcr:primaryType="nt:unstructured" width="12" offset="0" />
+            </cq:responsive>
+          </container>
+          <placevisitmap jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placevisitmap" heading="Plan your visit" address="Uphill Beach, Links Road, Uphill, Weston-super-Mare, BS23 4XY" directionsUrl="https://www.google.com/maps/dir/?api=1&amp;destination=Uphill%20Beach%2C%20Links%20Road%2C%20Uphill%2C%20Weston-super-Mare%2C%20BS23%204XY&amp;dir_action=navigate" travelNote="Follow local signs for parking near Links Road and check beach-parking conditions before arrival. Use this postcode for the arrival area, then follow local signs to the entrance. Google Maps can use your current location, or you can enter a starting point." postcode="BS23 4XY" mapEmbedUrl="https://www.google.com/maps?q=Uphill%20Beach%2C%20Links%20Road%2C%20Uphill%2C%20Weston-super-Mare%2C%20BS23%204XY&amp;z=15&amp;output=embed"></placevisitmap>
+          <visitorinformation jcr:primaryType="nt:unstructured" sling:resourceType="outwiththenest/components/placeabout" heading="Before you go" eyebrow="MAKE A DAY OF IT" description="&lt;p&gt;&lt;a href=&quot;https://www.n-somerset.gov.uk/sites/default/files/2020-01/Uphill%20walks.pdf&quot;&gt;Visitor information for Uphill Beach and Coastal Paths&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;/content/outwiththenest/gb/en/things-to-do/parks-and-walks/coastal-walks.html&quot;&gt;Explore more coastal walks&lt;/a&gt;&lt;/p&gt;" text="&lt;p&gt;&lt;a href=&quot;https://www.n-somerset.gov.uk/sites/default/files/2020-01/Uphill%20walks.pdf&quot;&gt;Visitor information for Uphill Beach and Coastal Paths&lt;/a&gt;. Check current access, closures and facilities before travelling.&lt;/p&gt;" imageCredit="&lt;p&gt;Photo: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Beach_at_Uphill,_with_Brean_Down_in_the_background_-_geograph.org.uk_-_2051050.jpg&quot;&gt;Beach at Uphill, with Brean Down in the background&lt;/a&gt; — Ruth Sharville. &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.0&quot;&gt;CC BY-SA 2.0&lt;/a&gt;. Displayed with responsive cropping.&lt;/p&gt;"></visitorinformation>
+        </container>
+      </container>
+    </root>
+  </jcr:content>
+</jcr:root>
